@@ -1,0 +1,9 @@
+.DS_Store
+assets/.DS_Store
+.jsbeautifyrc
+node_modules/
+.hintrc
+.stylelintrc.json
+package-lock.json
+package.json
+portfolio.code-workspace
