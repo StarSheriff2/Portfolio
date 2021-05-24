@@ -3,7 +3,9 @@
   Global stylings
   =======================
 */
-
+html {
+  font-size: 13px;
+}
 
 /*
   =======================
@@ -25,3 +27,8 @@
   Typography
   =======================
 */
+body {
+  font: 400 1rem/1.3rem "Poppins", sans-serif;
+  letter-spacing: normal;
+  background-color: #f5f5f5;
+}
