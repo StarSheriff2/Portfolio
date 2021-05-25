@@ -4,14 +4,44 @@
   =======================
 */
 html {
-  font-size: 13px;
+  font-size: 16px;
 }
+
+// Color Pallette //
+
+$bg-color: #E5E5E5;
+$primary-color: #6070FF;
+$primary-color-complement: #EBEBFF;
+$icons: #505F79;
+$white: #ffffff;
+
+// Font Variables //
+
+$primary-font: 'Poppins',
+  sans-serif;
+
+@mixin font-styles($weight: normal, $font-size: 1rem, $line-height: 1.5rem, $font: $primary-font) {
+  font: $weight #{$font-size}/#{$line-height} $font;
+}
+
+$body-font-color: #344563;
+$header-font-color: #172B4D;
+$sub-header-font-color: #000000;
+$inline-section-header: #7F8CFF;
+
+// Buttons //
+
+$button-enabled-border: #7F8CFF;
+$button-pressed: #2230D2;
+$button-text-disabled: #5E6C84;
+$button-border-disabled: #C1C7D0;
 
 /*
   =======================
   General layout
   =======================
 */
+
 .hidden {
   position: absolute;
   left: -9999999px;
@@ -22,13 +52,69 @@ html {
   overflow: -moz-hidden-unscrollable;
 }
 
+
+
 /*
   =======================
   Typography
   =======================
 */
 body {
-  font: 400 1rem/1.3rem "Poppins", sans-serif;
-  letter-spacing: normal;
-  background-color: #f5f5f5;
+  @include font-styles;
+
+  color: $body-font-color;
+}
+
+h2 {
+  @include font-styles($weight: bold, $font-size: 2.5rem, $line-height: 3.25rem);
+
+  color: $header-font-color;
+}
+
+h3 {
+  @include font-styles($weight: bold, $font-size: 2rem, $line-height: 2.75rem);
+
+  color: $header-font-color;
+}
+
+h4 {
+  @include font-styles($weight: 500, $font-size: 1.25rem, $line-height: 1.5rem);
+
+  color: $sub-header-font-color;
+}
+
+h5 {
+  @include font-styles($weight: 500);
+
+  color: $inline-section-header;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+
+button {
+  @include font-styles($weight: 500, $font-size: 1.06rem);
+
+  color: $primary-color;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 1px solid $button-enabled-border;
+  border-radius: 8px;
+  letter-spacing: 0.03em
+}
+
+button:hover {
+  color: $white;
+  background-color: $primary-color;
+  box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+}
+
+button:active {
+  color: $white;
+  background-color: $button-pressed;
+}
+
+button:disabled {
+  color: $button-text-disabled;
+  border-color: $button-border-disabled;
 }

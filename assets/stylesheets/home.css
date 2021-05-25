@@ -4,7 +4,7 @@
   =======================
 */
 html {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 /*
@@ -28,9 +28,56 @@ html {
   =======================
 */
 body {
-  font: 400 1rem/1.3rem "Poppins", sans-serif;
-  letter-spacing: normal;
-  background-color: #f5f5f5;
+  font: normal 1rem/1.5rem "Poppins", sans-serif;
+  color: #344563;
+}
+
+h2 {
+  font: bold 2.5rem/3.25rem "Poppins", sans-serif;
+  color: #172B4D;
+}
+
+h3 {
+  font: bold 2rem/2.75rem "Poppins", sans-serif;
+  color: #172B4D;
+}
+
+h4 {
+  font: 500 1.25rem/1.5rem "Poppins", sans-serif;
+  color: #000000;
+}
+
+h5 {
+  font: 500 1rem/1.5rem "Poppins", sans-serif;
+  color: #7F8CFF;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+button {
+  font: 500 1.06rem/1.5rem "Poppins", sans-serif;
+  color: #6070FF;
+  padding: 0.75rem;
+  background-color: transparent;
+  border: 1px solid #7F8CFF;
+  border-radius: 8px;
+  letter-spacing: 0.03em;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #6070FF;
+  box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+}
+
+button:active {
+  color: #ffffff;
+  background-color: #2230D2;
+}
+
+button:disabled {
+  color: #5E6C84;
+  border-color: #C1C7D0;
 }
 
 /*# sourceMappingURL=home.css.map */
