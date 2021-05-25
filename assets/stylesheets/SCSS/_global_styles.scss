@@ -9,11 +9,12 @@ html {
 
 // Color Pallette //
 
-$bg-color: #E5E5E5;
-$primary-color: #6070FF;
-$primary-color-complement: #EBEBFF;
-$icons: #505F79;
-$white: #ffffff;
+$bg-color: #e5e5e5;
+$primary-color: #6070ff;
+$primary-color-complement: #ebebff;
+$icons: #505f79;
+$white: #fff;
+$neutrals: #7a869a;
 
 // Font Variables //
 
@@ -25,16 +26,16 @@ $primary-font: 'Poppins',
 }
 
 $body-font-color: #344563;
-$header-font-color: #172B4D;
-$sub-header-font-color: #000000;
-$inline-section-header: #7F8CFF;
+$header-font-color: #172b4d;
+$sub-header-font-color: #000;
+$inline-section-header: #7f8cff;
 
 // Buttons //
 
-$button-enabled-border: #7F8CFF;
-$button-pressed: #2230D2;
-$button-text-disabled: #5E6C84;
-$button-border-disabled: #C1C7D0;
+$button-enabled-border: $inline-section-header;
+$button-pressed: #2230d2;
+$button-text-disabled: #5e6c84;
+$button-border-disabled: #c1c7d0;
 
 /*
   =======================
@@ -52,6 +53,27 @@ $button-border-disabled: #C1C7D0;
   overflow: -moz-hidden-unscrollable;
 }
 
+.caption {
+  @include font-styles($weight: 600, $font-size: 0.81rem, $line-height: 1rem);
+
+  color: $neutrals;
+
+  .caption-bold {
+    color: $body-font-color;
+    text-transform: uppercase;
+  }
+}
+
+.project-tag {
+  @include font-styles($weight: 500, $font-size: 0.75rem, $line-height: 1rem);
+
+  color: $primary-color;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.75rem;
+  background-color: $primary-color-complement;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+}
 
 
 /*
@@ -100,7 +122,7 @@ button {
   background-color: transparent;
   border: 1px solid $button-enabled-border;
   border-radius: 8px;
-  letter-spacing: 0.03em
+  letter-spacing: 0.03em;
 }
 
 button:hover {

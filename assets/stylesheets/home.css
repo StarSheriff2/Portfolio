@@ -22,6 +22,25 @@ html {
   overflow: -moz-hidden-unscrollable;
 }
 
+.caption {
+  font: 600 0.81rem/1rem "Poppins", sans-serif;
+  color: #7a869a;
+}
+.caption .caption-bold {
+  color: #344563;
+  text-transform: uppercase;
+}
+
+.project-tag {
+  font: 500 0.75rem/1rem "Poppins", sans-serif;
+  color: #6070ff;
+  letter-spacing: 0.03em;
+  padding: 0.25rem 0.75rem;
+  background-color: #ebebff;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+}
+
 /*
   =======================
   Typography
@@ -34,50 +53,50 @@ body {
 
 h2 {
   font: bold 2.5rem/3.25rem "Poppins", sans-serif;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 h3 {
   font: bold 2rem/2.75rem "Poppins", sans-serif;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 h4 {
   font: 500 1.25rem/1.5rem "Poppins", sans-serif;
-  color: #000000;
+  color: #000;
 }
 
 h5 {
   font: 500 1rem/1.5rem "Poppins", sans-serif;
-  color: #7F8CFF;
+  color: #7f8cff;
   text-transform: uppercase;
 }
 
 /* Buttons */
 button {
   font: 500 1.06rem/1.5rem "Poppins", sans-serif;
-  color: #6070FF;
+  color: #6070ff;
   padding: 0.75rem;
   background-color: transparent;
-  border: 1px solid #7F8CFF;
+  border: 1px solid #7f8cff;
   border-radius: 8px;
   letter-spacing: 0.03em;
 }
 
 button:hover {
-  color: #ffffff;
-  background-color: #6070FF;
+  color: #fff;
+  background-color: #6070ff;
   box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
 }
 
 button:active {
-  color: #ffffff;
-  background-color: #2230D2;
+  color: #fff;
+  background-color: #2230d2;
 }
 
 button:disabled {
-  color: #5E6C84;
-  border-color: #C1C7D0;
+  color: #5e6c84;
+  border-color: #c1c7d0;
 }
 
 /*# sourceMappingURL=home.css.map */
