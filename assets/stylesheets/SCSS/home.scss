@@ -31,7 +31,7 @@
   background-color: $white;
   border-radius: 16px;
   border: 1px solid $border-neutral;
-  margin: 88px 0;
+  margin: 44px 0;
 }
 
 .screenshot-div-frame {
@@ -80,7 +80,7 @@
 }
 
 .project-screenshot-2-background {
-  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) center/cover no-repeat;
+  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) left/contain no-repeat;
 }
 
 .project-screenshot-3-background {
