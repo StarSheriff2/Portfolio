@@ -1,3 +1,104 @@
-@import './global_styles'
+@import './global_styles';
 
+/*
+  =======================
+  Header
+  =======================
+*/
 
+/* Navbar */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+/* Header Content */
+
+.header-content {
+  padding-top: 20%;
+}
+
+/*
+  =======================
+  Main
+  =======================
+*/
+
+.project-section {
+  background-color: $white;
+  border-radius: 16px;
+  border: 1px solid $border-neutral;
+  margin: 88px 0;
+}
+
+.screenshot-div-frame {
+  padding-top: 75%;
+  height: 0;
+  position: relative;
+  border-radius: 8px;
+}
+
+.screenshot-div-frame-1-bg-color {
+  background-color: #ffb175;
+}
+
+.screenshot-div-frame-2-bg-color {
+  background-color: #ebe4df;
+}
+
+.screenshot-div-frame-3-bg-color {
+  background-color: #f28729;
+}
+
+.screenshot-div-frame-4-bg-color {
+  background-color: $white;
+}
+
+.screenshot-div-frame-5-bg-color {
+  background-color: $primary-color-complement;
+}
+
+.screenshot-div-frame-6-bg-color {
+  background-color: $primary-color-complement;
+}
+
+.project-screenshot-div-container {
+  position: absolute;
+  top: $spacer * 1.75;
+  left: $spacer * 1.25;
+  right: $spacer * 1.25;
+  bottom: $spacer * 1.75;
+  z-index: 1;
+  box-shadow: 0 0.75rem 10px rgba(0, 0, 0, 0.24);
+}
+
+.project-screenshot-1-background {
+  background: transparent url(../images/Screenshot-Newsweek-HTML-CSS.png) center/cover no-repeat;
+}
+
+.project-screenshot-2-background {
+  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) center/cover no-repeat;
+}
+
+.project-screenshot-3-background {
+  background: transparent url(../images/Screenshot-SocialScaffold-Rails.png) center/cover no-repeat;
+}
+
+.project-screenshot-4-background {
+  background: transparent url(../images/Screenshot-SalsaFestival2020-HTML-SCSS.png) center/cover no-repeat;
+}
+
+.project-screenshot-5-background {
+  background: transparent url(../images/Screenshot-MD-Cleaner-Ruby.png) center/cover no-repeat;
+}
+
+.project-screenshot-6-background {
+  background: transparent url(../images/Screenshot-TicTacToe-Ruby.png) center/cover no-repeat;
+}
+
+.project-section-para {
+  font-size: 0.94rem;
+}

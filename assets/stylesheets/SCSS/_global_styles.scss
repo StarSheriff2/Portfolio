@@ -15,6 +15,7 @@ $primary-color-complement: #ebebff;
 $icons: #505f79;
 $white: #fff;
 $neutrals: #7a869a;
+$border-neutral:#dfe1e6;
 
 // Font Variables //
 
@@ -30,6 +31,10 @@ $header-font-color: #172b4d;
 $sub-header-font-color: #000;
 $inline-section-header: #7f8cff;
 
+// Spacing //
+
+$spacer: 1rem;
+
 // Buttons //
 
 $button-enabled-border: $inline-section-header;
@@ -43,6 +48,14 @@ $button-border-disabled: #c1c7d0;
   =======================
 */
 
+header {
+  background-color: $white;
+}
+
+main {
+  padding: 114px 24px;
+}
+
 .hidden {
   position: absolute;
   left: -9999999px;
@@ -53,15 +66,19 @@ $button-border-disabled: #c1c7d0;
   overflow: -moz-hidden-unscrollable;
 }
 
+.social-media-links {
+  color: $icons;
+}
+
 .caption {
   @include font-styles($weight: 600, $font-size: 0.81rem, $line-height: 1rem);
 
   color: $neutrals;
+}
 
-  .caption-bold {
-    color: $body-font-color;
-    text-transform: uppercase;
-  }
+.caption-bold {
+  color: $body-font-color;
+  text-transform: uppercase;
 }
 
 .project-tag {
@@ -75,7 +92,6 @@ $button-border-disabled: #c1c7d0;
   margin: 0 0.5rem;
 }
 
-
 /*
   =======================
   Typography
@@ -84,6 +100,7 @@ $button-border-disabled: #c1c7d0;
 body {
   @include font-styles;
 
+  background-color: $bg-color;
   color: $body-font-color;
 }
 
@@ -110,6 +127,15 @@ h5 {
 
   color: $inline-section-header;
   text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.neutral-bullet-point {
+  color: $button-border-disabled;
 }
 
 /* Buttons */
