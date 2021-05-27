@@ -14,28 +14,24 @@
 </head>
 
 <body>
-  <header class="header vh-100 p-4 d-flex flex-wrap align-content-center">
+  <header class="header p-4">
     <h1 class="hidden">My Portfolio</h1>
 
     <nav class="navbar me-4">
       <span class="logo"></span>
       <i class="fas fa-bars menu-button-mobile"></i>
     </nav>
-    <div class="header-content w-100">
-
-      <h2>I'm Arturo! Welcome to my portfolio page!</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
-        ultricies
-        integer.</p>
-
-      <h5>Let's Connect</h5>
-      <ul class="social-media-links d-flex">
-        <li class="me-3"><i class="fab fa-twitter"></i></li>
-        <li class="me-3"><i class="fab fa-linkedin-in"></i></li>
-        <li class="me-3"><i class="fab fa-github"></i></li>
-      </ul>
-    </div>
+    <h2>I'm Arturo! Welcome to my portfolio page!</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
+      ultricies
+      integer.</p>
+    <h5>Let's Connect</h5>
+    <ul class="social-media-links d-flex">
+      <li class="me-3"><i class="fab fa-twitter"></i></li>
+      <li class="me-3"><i class="fab fa-linkedin-in"></i></li>
+      <li class="me-3"><i class="fab fa-github"></i></li>
+    </ul>
   </header>
   <main class="d-flex flex-column align-items-center">
     <section class="project-section p-3">
@@ -172,7 +168,7 @@
     </section>
   </main>
 <footer class="footer">
-  <section class="about-myself w-100 p-4">
+  <section class="about-myself p-4">
 
     <h2>About Myself</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -188,10 +184,10 @@
     <button type="button" class="mb-5">Get my resume</button>
     <details class="pt-2 mx-2">
       <summary class="d-flex justify-content-between pe-4"><h4>Languages</h4><span class="px-2">></span></summary>
+      <div class="details-content-container d-flex align-items-center p-3 mb-3"><img src="./assets/images/ruby-logo.png" alt="language-logo" class="language-logo me-3 circular-border"><span>Ruby</span></div>
       <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img src="./assets/images/js-logo.png" alt="language-logo" class="language-logo me-3 circular-border"><span>Javascript</span></div>
       <div class="details-content-container d-flex align-items-center p-3 mb-3"><img src="./assets/images/html5-logo.png" alt="language-logo" class="language-logo me-3"><span>HTML</span></div>
       <div class="details-content-container d-flex align-items-center p-3 mb-3"><img src="./assets/images/css3-logo.png" alt="language-logo" class="language-logo me-3"><span>CSS</span></div>
-      <div class="details-content-container d-flex align-items-center p-3 mb-3"><img src="./assets/images/ruby-logo.png" alt="language-logo" class="language-logo me-3 circular-border"><span>Ruby</span></div>
       <div class="details-content-container d-flex align-items-center p-3 mb-3"><img src="./assets/images/sql_logo.png" alt="language-logo" class="language-logo me-3"><span>SQL</span></div>
     </details>
     <hr>
@@ -220,7 +216,27 @@
     </details>
     <hr>
   </section>
-
+  <section class="contact-me p-4">
+    <h2 class="text-center">Contact me</h2>
+    <p class="contact-me-para text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
+      ultricies
+      integer.</p>
+    <form action="https://formsubmit.co/6de9cd9d41e328f7452519b3037b2aff" method="POST">
+      <input type="hidden" name="_subject" value="New message from Portfolio! woo!">
+      <div class="pb-3">
+        <input type="text" class="w-100 px-3 py-2" id="text" placeholder="name" name="name" required>
+      </div>
+      <div class="pb-3">
+        <input type="email" class="w-100 px-3 py-2" id="email" placeholder="name@youremail.com" name="email" required>
+        <!-- <input type="hidden" name="_next" value="thank_you.html"> -->
+      </div>
+      <div>
+        <textarea class="w-100 px-3 py-2" id="message" rows="5" placeholder="write your message here" name="message" required></textarea>
+      </div>
+      <button type="submit" class="white-button mb-2">Get in Touch</button>
+    </form>
+  </section>
 </footer>
 
 

@@ -19,10 +19,8 @@
   left: 0;
 }
 
-/* Header Content */
-
-.header-content {
-  padding-top: 20%;
+.social-media-links {
+  padding-bottom: 88px;
 }
 
 /*
@@ -109,9 +107,13 @@
 
 /*
   =======================
-  Main
+  Footer
   =======================
 */
+
+.footer {
+  border-radius: 0 88px 0 0;
+}
 
 .details-content-container {
   @include font-styles($weight: 500, $font-size: 0.94rem, $line-height: 1.25rem);
@@ -127,4 +129,24 @@
 
 .circular-border {
   border-radius: 100%;
+}
+
+.contact-me {
+  border-radius: 88px 0 0 0;
+  background-color: $primary-color;
+  color: $white;
+}
+
+.contact-me h2 {
+  color: $white;
+}
+
+.contact-me-para {
+  @include font-styles($font-size: 1.25rem, $line-height: 1.75rem);
+
+  color: $primary-color-complement;
+}
+
+.white-button {
+  background-color: $white;
 }

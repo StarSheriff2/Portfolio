@@ -9,7 +9,7 @@ html {
 
 // Color Pallette //
 
-$bg-color: #e5e5e5;
+$bg-color: #f4f5f7;
 $primary-color: #6070ff;
 $primary-color-complement: #ebebff;
 $icons: #505f79;
@@ -18,6 +18,7 @@ $neutrals: #7a869a;
 $border-neutral:#dfe1e6;
 $details-box: #f7f7f9;
 $details-text: #253858;
+$input-border-color: #cfd8dc;
 
 // Font Variables //
 
@@ -110,6 +111,7 @@ body {
 h2 {
   @include font-styles($weight: bold, $font-size: 2.5rem, $line-height: 3.25rem);
 
+  margin-top: 88px;
   color: $header-font-color;
 }
 
@@ -144,6 +146,45 @@ ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+input,
+textarea {
+  border: 1px solid $input-border-color;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea::placeholder {
+  @include font-styles($font-size: 0.93rem, $line-height: 1.5rem);
+
+  color: #b3bac5;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
+
+  color: $header-font-color;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
+
+  color: $header-font-color;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
+
+  color: $header-font-color;
+}
+:-moz-placeholder { /* Firefox 18- */
+  @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
+
+  color: $header-font-color;
+  opacity: 1;
 }
 
 .neutral-bullet-point {
