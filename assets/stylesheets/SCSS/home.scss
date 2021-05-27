@@ -6,6 +6,10 @@
   =======================
 */
 
+.header {
+  border-radius: 0 0 0 88px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -101,4 +105,26 @@
 
 .project-section-para {
   font-size: 0.94rem;
+}
+
+/*
+  =======================
+  Main
+  =======================
+*/
+
+.details-content-container {
+  @include font-styles($weight: 500, $font-size: 0.94rem, $line-height: 1.25rem);
+
+  background-color: $details-box;
+  border-radius: 8px;
+  color: $details-text;
+}
+
+.language-logo {
+  width: 48px;
+}
+
+.circular-border {
+  border-radius: 100%;
 }

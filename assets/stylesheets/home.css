@@ -12,7 +12,8 @@ html {
   General layout
   =======================
 */
-header {
+header,
+footer {
   background-color: #fff;
 }
 
@@ -86,9 +87,18 @@ h5 {
   text-transform: uppercase;
 }
 
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .neutral-bullet-point {
@@ -104,6 +114,7 @@ button {
   border: 1px solid #7f8cff;
   border-radius: 8px;
   letter-spacing: 0.03em;
+  margin: 1rem 0;
 }
 
 button:hover {
@@ -127,6 +138,10 @@ button:disabled {
   Header
   =======================
 */
+.header {
+  border-radius: 0 0 0 88px;
+}
+
 /* Navbar */
 .navbar {
   position: absolute;
@@ -219,6 +234,26 @@ button:disabled {
 
 .project-section-para {
   font-size: 0.94rem;
+}
+
+/*
+  =======================
+  Main
+  =======================
+*/
+.details-content-container {
+  font: 500 0.94rem/1.25rem "Poppins", sans-serif;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  color: #253858;
+}
+
+.language-logo {
+  width: 48px;
+}
+
+.circular-border {
+  border-radius: 100%;
 }
 
 /*# sourceMappingURL=home.css.map */

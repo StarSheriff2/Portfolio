@@ -16,6 +16,8 @@ $icons: #505f79;
 $white: #fff;
 $neutrals: #7a869a;
 $border-neutral:#dfe1e6;
+$details-box: #f7f7f9;
+$details-text: #253858;
 
 // Font Variables //
 
@@ -48,7 +50,8 @@ $button-border-disabled: #c1c7d0;
   =======================
 */
 
-header {
+header,
+footer {
   background-color: $white;
 }
 
@@ -129,9 +132,18 @@ h5 {
   text-transform: uppercase;
 }
 
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .neutral-bullet-point {
@@ -149,6 +161,7 @@ button {
   border: 1px solid $button-enabled-border;
   border-radius: 8px;
   letter-spacing: 0.03em;
+  margin: 1rem 0;
 }
 
 button:hover {
