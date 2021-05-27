@@ -41,6 +41,7 @@ $spacer: 1rem;
 // Buttons //
 
 $button-enabled-border: $inline-section-header;
+$button-modal: #396DF2;
 $button-pressed: #2230d2;
 $button-text-disabled: #5e6c84;
 $button-border-disabled: #c1c7d0;
@@ -57,7 +58,7 @@ footer {
 }
 
 main {
-  padding: 88px 24px;
+  padding: 72px 24px;
 }
 
 .hidden {
@@ -94,6 +95,18 @@ main {
   background-color: $primary-color-complement;
   border-radius: 8px;
   margin: 0 0.5rem 0.5rem;
+}
+
+.modal-content {
+  border-radius: 16px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
 }
 
 /*
@@ -191,6 +204,10 @@ textarea::placeholder {
   color: $button-border-disabled;
 }
 
+.modal-body p {
+  @include font-styles($font-size: 0.94rem, $line-height: 1.5rem);
+}
+
 /* Buttons */
 
 button {
@@ -203,6 +220,11 @@ button {
   border-radius: 8px;
   letter-spacing: 0.03em;
   margin: 1rem 0;
+}
+
+.modal-button {
+  font-size: 0.94rem;
+  line-height: 1.25rem;
 }
 
 button:hover {

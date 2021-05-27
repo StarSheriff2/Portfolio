@@ -18,7 +18,7 @@ footer {
 }
 
 main {
-  padding: 88px 24px;
+  padding: 72px 24px;
 }
 
 .hidden {
@@ -53,6 +53,18 @@ main {
   background-color: #ebebff;
   border-radius: 8px;
   margin: 0 0.5rem 0.5rem;
+}
+
+.modal-content {
+  border-radius: 16px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
 }
 
 /*
@@ -147,6 +159,10 @@ textarea::placeholder {
   color: #c1c7d0;
 }
 
+.modal-body p {
+  font: normal 0.94rem/1.5rem "Poppins", sans-serif;
+}
+
 /* Buttons */
 button {
   font: 500 1.06rem/1.5rem "Poppins", sans-serif;
@@ -157,6 +173,11 @@ button {
   border-radius: 8px;
   letter-spacing: 0.03em;
   margin: 1rem 0;
+}
+
+.modal-button {
+  font-size: 0.94rem;
+  line-height: 1.25rem;
 }
 
 button:hover {
