@@ -9,6 +9,77 @@
 
 .header {
   border-radius: 0 0 0 88px;
+  position: relative;
+
+  h2,
+  p,
+  h5,
+  ul {
+    z-index: 3;
+    position: relative;
+  }
+}
+
+.background-icons-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header-bg-icons {
+  position: absolute;
+}
+
+.cat-icon {
+  right: 10px;
+  bottom: 24px;
+  rotate: 45deg;
+  width: 56px;
+  opacity: 40%;
+}
+
+.netflix-icon {
+  right: -130px;
+  top: 80px;
+  rotate: 55deg;
+  opacity: 40%;
+}
+
+.cat-icon-2 {
+  top: 260px;
+  left: 180px;
+  opacity: 20%;
+}
+
+.supermario-icon {
+  bottom: 70px;
+  left: 130px;
+  rotate: -33deg;
+  width: 56px;
+  opacity: 55%;
+}
+
+.wavy-line-icon {
+  top: 60px;
+  left: 20px;
+  opacity: 30%;
+}
+
+.wavy-line-icon-2 {
+  top: 200px;
+  left: 60px;
+  opacity: 10%;
+  width: 35px;
+}
+
+.wavy-line-icon-3 {
+  bottom: -5px;
+  left: 0;
+  rotate: 90deg;
+  opacity: 80%;
 }
 
 /* Navbar */
@@ -150,18 +221,44 @@
   border-radius: 88px 0 0 0;
   background-color: $primary-color;
   color: $white;
+  position: relative;
+}
+
+.wavy-line-icon-drk-bg-1 {
+  top: 60px;
+  rotate: 90deg;
+  opacity: 50%;
+}
+
+.wavy-line-icon-drk-bg-2 {
+  top: 200px;
+  right: 80px;
+  opacity: 30%;
+  width: 46px;
+}
+
+.wavy-line-icon-drk-bg-3 {
+  bottom: -20px;
+  rotate: 90deg;
+  opacity: 50%;
 }
 
 .contact-me h2 {
   color: $white;
+  position: relative;
+  z-index: 3;
 }
 
 .contact-me-para {
   @include font-styles($font-size: 1.25rem, $line-height: 1.75rem);
 
   color: $primary-color-complement;
+  position: relative;
+  z-index: 3;
 }
 
 .white-button {
   background-color: $white;
+  position: relative;
+  z-index: 3;
 }
