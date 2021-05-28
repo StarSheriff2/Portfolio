@@ -16,7 +16,6 @@
 <body>
   <!-- Mobile Overlay Nav -->
   <div id="myNav" class="overlay">
-    <div class="overlay-background"></div>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
       <a href="#portfolio" onclick="closeNav()">Portfolio</a>
@@ -31,11 +30,9 @@
       <a href="/"><img class="reload-page-logo" src="./assets/images/sheriff-badge-logo.png" alt="star sheriff logo"></a>
       <i class="fas fa-bars menu-button-mobile" onclick="openNav()"></i>
     </nav>
-    <h2>I'm Arturo! Welcome to my portfolio page!</h2>
+    <h2>I'm Arturo! Welcome to my portfolio!</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
-      ultricies
-      integer.</p>
+      magna aliqua. </p>
     <h5>Let's Connect</h5>
     <ul class="social-media-links social-media-links-top d-flex">
       <li class="me-3"><a href="https://twitter.com/ArturoAlvarezV"><i class="fab fa-twitter"></i></a></li>
@@ -43,8 +40,8 @@
       <li class="me-3"><a href="https://github.com/StarSheriff2"><i class="fab fa-github"></i></a></li>
     </ul>
   </header>
-  <main class="main d-flex flex-column align-items-center" id="portfolio">
-    <section class="project-section p-3">
+  <main class="main d-flex flex-column align-items-center">
+    <section class="project-section p-3" id="portfolio">
       <div class="screenshot-div-frame screenshot-div-frame-1-bg-color mb-3">
         <div class="project-screenshot-div-container project-screenshot-1-background">
         </div>
@@ -448,8 +445,8 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="about-myself p-4" id="about">
-      <h2>About Myself</h2>
+    <section class="about-myself p-4">
+      <h2 id="about">About Myself</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
         ultricies
@@ -466,7 +463,7 @@
         <summary class="d-flex justify-content-between pe-4">
           <h4>Languages</h4><span class="px-2">></span>
         </summary>
-        <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
+        <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img
             src="./assets/images/ruby-logo.png" alt="language-logo"
             class="language-logo me-3 circular-border"><span>Ruby</span></div>
         <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img
@@ -522,13 +519,11 @@
       </details>
       <hr>
     </section>
-    <section class="contact-me p-4" id="contact">
-      <h2 class="text-center">Contact me</h2>
+    <section class="contact-me p-4">
+      <h2 class="text-center" id="contact">Contact me</h2>
       <p class="contact-me-para text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
-        ultricies
-        integer.</p>
+        magna aliqua.</p>
       <form action="https://formsubmit.co/6de9cd9d41e328f7452519b3037b2aff" method="POST">
         <input type="hidden" name="_subject" value="New message from Portfolio! woo!">
         <div class="pb-3">

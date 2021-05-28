@@ -201,25 +201,16 @@ button:disabled {
 }
 
 .overlay {
+  background-color: #6070ff;
+  background-color: rgba(96, 112, 255, 0.95);
   height: 100%;
   width: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
-}
-
-.overlay-background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #6070ff;
-  background-color: rgba(96, 112, 255, 0.9);
-  mix-blend-mode: multiply;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .overlay-content {
@@ -229,7 +220,6 @@ button:disabled {
   padding-left: 1rem;
   width: 100%;
   text-align: start;
-  z-index: 1000;
 }
 
 .overlay a {
@@ -270,6 +260,7 @@ button:disabled {
   top: 0;
   right: 0;
   left: 0;
+  transition: top 0.3s;
   z-index: 100;
 }
 
