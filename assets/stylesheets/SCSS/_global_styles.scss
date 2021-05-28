@@ -15,7 +15,7 @@ $primary-color-rgb: rgb(96, 112, 255);
 $primary-color-rgba: rgba(96, 112, 255, 0.95);
 $primary-color-complement: #ebebff;
 $icons: #505f79;
-$icons-visited: #565079;
+$links-visited: #565079;
 $white: #fff;
 $neutrals: #7a869a;
 $border-neutral:#dfe1e6;
@@ -165,7 +165,7 @@ ul {
 }
 
 a:visited {
-  color: $icons-visited;
+  color: $links-visited;
 }
 
 input,

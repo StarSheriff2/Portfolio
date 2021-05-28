@@ -272,6 +272,10 @@ button:disabled {
   color: #6070ff;
 }
 
+.social-media-links .fab {
+  color: #505f79;
+}
+
 .social-media-links-top {
   padding-bottom: 88px;
 }
