@@ -14,10 +14,15 @@
 /* Navbar */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  z-index: 100;
+}
+
+.reload-page-logo {
+  width: 32px;
 }
 
 .menu-button-mobile {
