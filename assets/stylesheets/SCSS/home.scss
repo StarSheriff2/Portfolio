@@ -1,4 +1,5 @@
 @import './global_styles';
+@import './mobile_menu';
 
 /*
   =======================
@@ -19,7 +20,11 @@
   left: 0;
 }
 
-.social-media-links {
+.menu-button-mobile {
+  color: $primary-color;
+}
+
+.social-media-links-top {
   padding-bottom: 88px;
 }
 

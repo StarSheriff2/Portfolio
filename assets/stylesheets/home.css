@@ -114,6 +114,10 @@ ul {
   margin: 0;
 }
 
+a:visited {
+  color: #565079;
+}
+
 input,
 textarea {
   border: 1px solid #cfd8dc;
@@ -196,6 +200,61 @@ button:disabled {
   border-color: #c1c7d0;
 }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6070ff;
+  background-color: rgba(96, 112, 255, 0.9);
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  padding-left: 1rem;
+  width: 100%;
+  text-align: start;
+  z-index: 1000;
+}
+
+.overlay a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  line-height: 2.75rem;
+  z-index: 1000;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ebebff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.25rem;
+  font-size: 2rem;
+}
+
 /*
   =======================
   Header
@@ -213,7 +272,11 @@ button:disabled {
   left: 0;
 }
 
-.social-media-links {
+.menu-button-mobile {
+  color: #6070ff;
+}
+
+.social-media-links-top {
   padding-bottom: 88px;
 }
 

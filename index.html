@@ -14,12 +14,21 @@
 </head>
 
 <body>
+  <!-- Mobile Overlay Nav -->
+  <div id="myNav" class="overlay">
+    <div class="overlay-background"></div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+      <a href="#about" onclick="closeNav()">About</a>
+      <a href="#contact" onclick="closeNav()">Contact</a>
+    </div>
+  </div>
+  <!-- end -->
   <header class="header p-4">
     <h1 class="hidden">My Portfolio</h1>
-
-    <nav class="navbar me-4">
-      <span class="logo"></span>
-      <i class="fas fa-bars menu-button-mobile"></i>
+    <nav class="navbar me-4 d-flex justify-content-end">
+      <i class="fas fa-bars menu-button-mobile" onclick="openNav()"></i>
     </nav>
     <h2>I'm Arturo! Welcome to my portfolio page!</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -27,13 +36,13 @@
       ultricies
       integer.</p>
     <h5>Let's Connect</h5>
-    <ul class="social-media-links d-flex">
-      <li class="me-3"><i class="fab fa-twitter"></i></li>
-      <li class="me-3"><i class="fab fa-linkedin-in"></i></li>
-      <li class="me-3"><i class="fab fa-github"></i></li>
+    <ul class="social-media-links social-media-links-top d-flex">
+      <li class="me-3"><a href="https://twitter.com/ArturoAlvarezV"><i class="fab fa-twitter"></i></a></li>
+      <li class="me-3"><a href="https://www.linkedin.com/in/arturoalvarezv/"><i class="fab fa-linkedin-in"></i></a></li>
+      <li class="me-3"><a href="https://github.com/StarSheriff2"><i class="fab fa-github"></a></i></li>
     </ul>
   </header>
-  <main class="d-flex flex-column align-items-center">
+  <main class="main d-flex flex-column align-items-center" id="portfolio">
     <section class="project-section p-3">
       <div class="screenshot-div-frame screenshot-div-frame-1-bg-color mb-3">
         <div class="project-screenshot-div-container project-screenshot-1-background">
@@ -62,7 +71,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content pb-2">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">Newsweek</h3>
+              <h3 class="modal-title" id="newsweek">Newsweek</h3>
               <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <ul class="d-flex flex-wrap px-3">
@@ -88,12 +97,12 @@
             </div>
             <hr class="mt-0 mb-2 mx-3 w-auto">
             <div class="modal-footer d-flex flex-nowrap">
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://starsheriff2.github.io/newsweek-bootstrap-design/'"
                 value="See live">See live <i class="ps-2 fas fa-external-link-alt"></i></button>
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://github.com/StarSheriff2/newsweek-bootstrap-design'"
-                value="See Source">See Source</button>
+                value="See Source">See Source <i class="ps-2 fab fa-github"></i></button>
             </div>
           </div>
         </div>
@@ -129,7 +138,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content pb-2">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">Recipe Buddies</h3>
+              <h3 class="modal-title" id="recipe-buddies">Recipe Buddies</h3>
               <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <ul class="d-flex flex-wrap px-3">
@@ -155,12 +164,12 @@
             </div>
             <hr class="mt-0 mb-2 mx-3 w-auto">
             <div class="modal-footer d-flex flex-nowrap">
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://gentle-cliffs-69056.herokuapp.com/'" value="See live">See live <i
                   class="ps-2 fas fa-external-link-alt"></i></button>
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://github.com/StarSheriff2/receipe-buddies'" value="See Source">See
-                Source</button>
+                Source <i class="ps-2 fab fa-github"></i></button>
             </div>
           </div>
         </div>
@@ -196,7 +205,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content pb-2">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">Stay in Touch</h3>
+              <h3 class="modal-title" id="stay-in-touch">Stay in Touch</h3>
               <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <ul class="d-flex flex-wrap px-3">
@@ -222,12 +231,12 @@
             </div>
             <hr class="mt-0 mb-2 mx-3 w-auto">
             <div class="modal-footer d-flex flex-nowrap">
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://fast-wildwood-38105.herokuapp.com/'" value="See live">See live <i
                   class="ps-2 fas fa-external-link-alt"></i></button>
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://github.com/alexisbec/ror-social-scaffold'" value="See Source">See
-                Source</button>
+                Source <i class="ps-2 fab fa-github"></i></button>
             </div>
           </div>
         </div>
@@ -263,7 +272,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content pb-2">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">Salsa Festival Website</h3>
+              <h3 class="modal-title" id="salsa-festival">Salsa Festival Website</h3>
               <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <ul class="d-flex flex-wrap px-3">
@@ -289,12 +298,12 @@
             </div>
             <hr class="mt-0 mb-2 mx-3 w-auto">
             <div class="modal-footer d-flex flex-nowrap">
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://starsheriff2.github.io/Salsa-Bachata-Summit-2020---HTML-CSS-Capstone-Project/'"
                 value="See live">See live <i class="ps-2 fas fa-external-link-alt"></i></button>
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://github.com/StarSheriff2/Salsa-Bachata-Summit-2020---HTML-CSS-Capstone-Project'"
-                value="See Source">See Source</button>
+                value="See Source">See Source <i class="ps-2 fab fa-github"></i></button>
             </div>
           </div>
         </div>
@@ -330,7 +339,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content pb-2">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">MD Cleaner</h3>
+              <h3 class="modal-title" id="md-cleaner">MD Cleaner</h3>
               <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <ul class="d-flex flex-wrap px-3">
@@ -356,12 +365,12 @@
             </div>
             <hr class="mt-0 mb-2 mx-3 w-auto">
             <div class="modal-footer d-flex flex-nowrap">
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://replit.com/@StarSheriff2/MD-Cleanerdemo'" value="See live">See
                 live <i class="ps-2 fas fa-external-link-alt"></i></button>
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://github.com/StarSheriff2/MD-Cleaner'" value="See Source">See
-                Source</button>
+                Source <i class="ps-2 fab fa-github"></i></button>
             </div>
           </div>
         </div>
@@ -397,7 +406,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content pb-2">
             <div class="modal-header">
-              <h3 class="modal-title" id="exampleModalLabel">Tic Tac Toe</h3>
+              <h3 class="modal-title" id="tic-tac-toe">Tic Tac Toe</h3>
               <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <ul class="d-flex flex-wrap px-3">
@@ -423,12 +432,13 @@
             </div>
             <hr class="mt-0 mb-2 mx-3 w-auto">
             <div class="modal-footer d-flex flex-nowrap">
-              <button type="button modal-button" class="w-100"
-                onclick="window.location.href='https://replit.com/@StarSheriff2/Tic-Tac-Toe-Ruby-Project'" value="See live">See
+              <button type="button" class="w-100 modal-button"
+                onclick="window.location.href='https://replit.com/@StarSheriff2/Tic-Tac-Toe-Ruby-Project'"
+                value="See live">See
                 live <i class="ps-2 fas fa-external-link-alt"></i></button>
-              <button type="button modal-button" class="w-100"
+              <button type="button" class="w-100 modal-button"
                 onclick="window.location.href='https://github.com/StarSheriff2/rb-tic-tac-toe'" value="See Source">See
-                Source</button>
+                Source <i class="ps-2 fab fa-github"></i></button>
             </div>
           </div>
         </div>
@@ -437,8 +447,7 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="about-myself p-4">
-
+    <section class="about-myself p-4" id="about">
       <h2>About Myself</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Viverra justo nec ultrices dui sapien eget mi. Amet nisl suscipit adipiscing bibendum est
@@ -446,9 +455,10 @@
         integer.</p>
       <h5>Let's Connect</h5>
       <ul class="social-media-links d-flex">
-        <li class="me-3"><i class="fab fa-github"></i></li>
-        <li class="me-3"><i class="fab fa-linkedin-in"></i></li>
-        <li class="me-3"><i class="fab fa-twitter"></i></li>
+        <li class="me-3"><a href="https://github.com/StarSheriff2"><i class="fab fa-github"></a></i></li>
+        <li class="me-3"><a href="https://www.linkedin.com/in/arturoalvarezv/"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="me-3"><a href="https://twitter.com/ArturoAlvarezV"><i class="fab fa-twitter"></i></a></li>
       </ul>
       <button type="button" class="mb-5">Get my resume</button>
       <details class="pt-2 mx-2">
@@ -511,7 +521,7 @@
       </details>
       <hr>
     </section>
-    <section class="contact-me p-4">
+    <section class="contact-me p-4" id="contact">
       <h2 class="text-center">Contact me</h2>
       <p class="contact-me-para text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore
@@ -536,7 +546,7 @@
     </section>
   </footer>
 
-
+  <script src="js/my_portfolio.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
   </script>

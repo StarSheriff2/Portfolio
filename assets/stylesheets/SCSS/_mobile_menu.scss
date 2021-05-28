@@ -1,0 +1,54 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $primary-color-rgb;
+  background-color: $primary-color-rgba;
+  mix-blend-mode: multiply;
+  z-index: 10;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  padding-left: $spacer * 1;
+  width: 100%;
+  text-align: start;
+  z-index: 1000;
+}
+
+.overlay a {
+  padding: $spacer * 1;
+  text-decoration: none;
+  font-size: 2rem;
+  color: $white;
+  display: block;
+  transition: 0.3s;
+  line-height: 2.75rem;
+  z-index: 1000;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: $primary-color-complement;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: $spacer * 1.75;
+  right: $spacer * 1.25;
+  font-size: 2rem;
+}

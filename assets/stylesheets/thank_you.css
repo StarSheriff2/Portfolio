@@ -114,6 +114,10 @@ ul {
   margin: 0;
 }
 
+a:visited {
+  color: #565079;
+}
+
 input,
 textarea {
   border: 1px solid #cfd8dc;
