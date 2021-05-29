@@ -114,6 +114,10 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:visited {
   color: #565079;
 }
@@ -347,7 +351,7 @@ button:disabled {
 }
 
 .social-media-links-top {
-  padding-bottom: 88px;
+  margin-bottom: 88px;
 }
 
 /*
@@ -481,10 +485,14 @@ button:disabled {
   opacity: 50%;
 }
 
+.contact-me,
 .contact-me h2 {
-  color: #fff;
   position: relative;
   z-index: 3;
+}
+
+.contact-me h2 {
+  color: #fff;
 }
 
 .contact-me-para {
@@ -498,6 +506,128 @@ button:disabled {
   background-color: #fff;
   position: relative;
   z-index: 3;
+}
+
+/*
+  =======================
+  Media Query: MD
+  =======================
+*/
+@media (min-width: 768px) {
+  /* Global Stylings */
+  html {
+    font-size: 20px;
+  }
+
+  h2 {
+    margin-top: 330px;
+  }
+
+  button {
+    font: 500 0.85rem/1.2rem "Poppins", sans-serif;
+  }
+
+  .header {
+    border-radius: 0 0 0 176px;
+  }
+
+  /* Navbar */
+  .nav-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 0.3s;
+  }
+
+  .nav-wrapper-scroll-class {
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    box-shadow: 0 0.7rem 10px rgba(235, 235, 255, 0.84);
+  }
+
+  .navbar {
+    position: static;
+    max-width: 1156px;
+  }
+
+  .nav-links-md a {
+    font: 500 0.75rem/1rem "Poppins", sans-serif;
+    color: #344563;
+  }
+
+  /* Header Content */
+  .header-content-wrapper {
+    max-width: 920px;
+    margin: auto;
+  }
+
+  .social-media-links .fab {
+    font-size: 1.2rem;
+  }
+
+  .social-media-links-top {
+    margin-bottom: 242px;
+  }
+
+  /* Main */
+  .project-section {
+    margin: 74.8px 0;
+    width: 100%;
+    max-width: 1156px;
+    position: relative;
+    border: none;
+    border-radius: 24px;
+  }
+
+  .project-md-stretched-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .project-md-stretched-link:hover {
+    border: 2px solid #a7aeff;
+    box-shadow: 0 1.75rem 20px rgba(235, 235, 255, 0.84);
+  }
+
+  .project-md-stretched-link:hover ~ button {
+    color: #fff;
+    background-color: #6070ff;
+    box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  }
+
+  .project-md-stretched-link:active ~ button {
+    color: #fff;
+    background-color: #2230d2;
+  }
+
+  .screenshot-div-frame {
+    padding-top: 75%;
+    height: 0;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .project-section-para {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* Footer */
+  .footer {
+    border-radius: 0 176px 0 0;
+  }
+
+  .contact-me {
+    border-radius: 176px 0 0 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

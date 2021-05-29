@@ -106,7 +106,7 @@
 }
 
 .social-media-links-top {
-  padding-bottom: 88px;
+  margin-bottom: 88px;
 }
 
 /*
@@ -243,10 +243,14 @@
   opacity: 50%;
 }
 
+.contact-me,
 .contact-me h2 {
-  color: $white;
   position: relative;
   z-index: 3;
+}
+
+.contact-me h2 {
+  color: $white;
 }
 
 .contact-me-para {
@@ -261,4 +265,132 @@
   background-color: $white;
   position: relative;
   z-index: 3;
+}
+
+/*
+  =======================
+  Media Query: MD
+  =======================
+*/
+
+@media (min-width: 768px) {
+  /* Global Stylings */
+
+  html {
+    font-size: 20px;
+  }
+
+  h2 {
+    margin-top: 88px*3.75;
+  }
+
+  button {
+    @include font-styles($weight: 500, $font-size: 0.85rem, $line-height: 1.2rem);
+  }
+
+  .header {
+    border-radius: 0 0 0 88px*2;
+  }
+
+  /* Navbar */
+
+  .nav-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    transition: top 0.3s;
+  }
+
+  .nav-wrapper-scroll-class {
+    background-color: $white;
+    border: 1px solid $border-neutral;
+    box-shadow: 0 0.7rem 10px	rgb(235, 235, 255, 0.84);
+  }
+
+  .navbar {
+    position: static;
+    max-width: $extra-wide-content;
+  }
+
+  .nav-links-md a {
+    @include font-styles($weight: 500, $font-size: 0.75rem, $line-height: 1rem, $font: $primary-font);
+
+    color: $body-font-color;
+  }
+
+  /* Header Content */
+
+  .header-content-wrapper {
+    max-width: $wide-content;
+    margin: auto;
+  }
+
+  .social-media-links .fab {
+    font-size: 1.2rem;
+  }
+
+  .social-media-links-top {
+    margin-bottom: 88px*2.75;
+  }
+
+  /* Main */
+  .project-section {
+    margin: 44px*1.7 0;
+    width: 100%;
+    max-width: $extra-wide-content;
+    position: relative;
+    border: none;
+    border-radius: 24px;
+  }
+
+  .project-md-stretched-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    border: 1px solid $border-neutral;
+    border-radius: 24px;
+  }
+
+  .project-md-stretched-link:hover {
+    border: 2px solid $project-hover-border;
+    box-shadow: 0 1.75rem 20px	rgb(235, 235, 255, 0.84);
+  }
+
+  .project-md-stretched-link:hover ~ button {
+    color: $white;
+    background-color: $primary-color;
+    box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  }
+
+  .project-md-stretched-link:active ~ button {
+    color: $white;
+    background-color: $button-pressed;
+  }
+
+  .screenshot-div-frame {
+    padding-top: 75%;
+    height: 0;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .project-section-para {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+
+  /* Footer */
+
+  .footer {
+    border-radius: 0 88px*2 0 0;
+  }
+
+  .contact-me {
+    border-radius: 88px*2 0 0 0;
+  }
 }

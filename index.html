@@ -29,49 +29,70 @@
       <img src="./assets/images/icons8-cat-64.png" alt="cat icon" class="header-bg-icons cat-icon">
       <img src="./assets/images/icons8-netflix-256.png" alt="netflix logo" class="header-bg-icons netflix-icon">
       <img src="./assets/images/icons8-cat-64.png" alt="cat icon" class="header-bg-icons cat-icon-2">
-      <img src="./assets/images/icons8-super-mario-64.png" alt="super mario icon" class="header-bg-icons supermario-icon">
+      <img src="./assets/images/icons8-super-mario-64.png" alt="super mario icon"
+        class="header-bg-icons supermario-icon">
       <img src="./assets/images/icons8-wavy-line-64.png" alt="wavy line" class="header-bg-icons wavy-line-icon">
       <img src="./assets/images/icons8-wavy-line-64.png" alt="wavy line" class="header-bg-icons wavy-line-icon-2">
       <img src="./assets/images/icons8-wavy-line-96.png" alt="wavy line" class="header-bg-icons wavy-line-icon-3">
     </div>
     <h1 class="hidden">My Portfolio</h1>
-    <nav class="navbar mx-3 d-flex justify-content-between">
-      <a href="/"><img class="reload-page-logo" src="./assets/images/sheriff-badge-logo.png" alt="star sheriff logo"></a>
-      <i class="fas fa-bars menu-button-mobile" onclick="openNav()"></i>
-    </nav>
-    <h2>I'm Arturo! Welcome to my portfolio!</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. </p>
-    <h5>Let's Connect</h5>
-    <ul class="social-media-links social-media-links-top d-flex">
-      <li class="me-3"><a href="https://twitter.com/ArturoAlvarezV"><i class="fab fa-twitter"></i></a></li>
-      <li class="me-3"><a href="https://www.linkedin.com/in/arturoalvarezv/"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="me-3"><a href="https://github.com/StarSheriff2"><i class="fab fa-github"></i></a></li>
-    </ul>
+    <div class="nav-wrapper d-md-block py-md-2">
+      <nav class="navbar mx-3 mx-md-auto px-md-3 d-flex justify-content-between">
+        <a href="/"><img class="reload-page-logo" src="./assets/images/sheriff-badge-logo.png"
+            alt="star sheriff logo"></a>
+        <i class="fas fa-bars menu-button-mobile d-md-none" onclick="openNav()"></i>
+        <ul class="nav-links-md d-none d-md-flex">
+          <li class="me-md-4"><a href="#portfolio">Portfolio</a></li>
+          <li class="me-md-4"><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-content-wrapper d-md-block">
+      <h2>I'm Arturo! Welcome to my portfolio!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. </p>
+      <h5>Let's Connect</h5>
+      <ul class="social-media-links social-media-links-top d-flex">
+        <li class="me-3"><a href="https://twitter.com/ArturoAlvarezV"><i class="fab fa-twitter"></i></a></li>
+        <li class="me-3"><a href="https://www.linkedin.com/in/arturoalvarezv/"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="me-3"><a href="https://github.com/StarSheriff2"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
   </header>
   <main class="main d-flex flex-column align-items-center">
-    <section class="project-section p-3" id="portfolio">
-      <div class="screenshot-div-frame screenshot-div-frame-1-bg-color mb-3">
-        <div class="project-screenshot-div-container project-screenshot-1-background">
+    <section class="project-section p-3 container-md" id="portfolio">
+      <div class="row">
+        <div class="col-md me-md-3">
+          <div class="screenshot-div-frame screenshot-div-frame-1-bg-color mb-3 mb-md-0">
+            <div class="project-screenshot-div-container project-screenshot-1-background">
+            </div>
+          </div>
+        </div>
+        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start">
+          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
+            data-bs-target="#project1"></a>
+          <h3>Newsweek</h3>
+          <ul class="d-flex flex-wrap mb-md-4">
+            <li><span class="caption caption-bold">Website</span></li>
+            <li class="neutral-bullet-point mx-2">•</li>
+            <li><span class="caption">Front End Dev</span></li>
+            <li class="neutral-bullet-point mx-2">•</li>
+            <li><span class="caption">2020</span></li>
+          </ul>
+          <p class="project-section-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor.
+          </p>
+          <ul class="d-flex flex-wrap">
+            <li class="project-tag ms-0">html</li>
+            <li class="project-tag">css</li>
+            <li class="project-tag">bootstrap</li>
+          </ul>
+          <!-- Button trigger modal -->
+          <button type="button" data-bs-toggle="modal" data-bs-target="#project1">See Project</button>
         </div>
       </div>
-      <h3>Newsweek</h3>
-      <ul class="d-flex flex-wrap">
-        <li><span class="caption caption-bold">Website</span></li>
-        <li class="neutral-bullet-point mx-2">•</li>
-        <li><span class="caption">Front End Dev</span></li>
-        <li class="neutral-bullet-point mx-2">•</li>
-        <li><span class="caption">2020</span></li>
-      </ul>
-      <p class="project-section-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-      </p>
-      <ul class="d-flex flex-wrap">
-        <li class="project-tag ms-0">html</li>
-        <li class="project-tag">css</li>
-        <li class="project-tag">bootstrap</li>
-      </ul>
-      <!-- Button trigger modal -->
-      <button type="button" data-bs-toggle="modal" data-bs-target="#project1">See Project</button>
 
       <!-- Modal -->
       <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
@@ -532,9 +553,12 @@
       <div class="background-icons-wrapper overflow-hidden">
         <img src="./assets/images/icons8-cat-64-drk-bg.png" alt="cat icon" class="header-bg-icons cat-icon">
         <img src="./assets/images/icons8-cat-64-drk-bg.png" alt="cat icon" class="header-bg-icons cat-icon-2">
-        <img src="./assets/images/icons8-wavy-line-64-drk-bg.png" alt="wavy line" class="header-bg-icons wavy-line-icon-drk-bg-1">
-        <img src="./assets/images/icons8-wavy-line-64-drk-bg.png" alt="wavy line" class="header-bg-icons wavy-line-icon-drk-bg-2">
-        <img src="./assets/images/icons8-wavy-line-96-drk-bg.png" alt="wavy line" class="header-bg-icons wavy-line-icon-drk-bg-3">
+        <img src="./assets/images/icons8-wavy-line-64-drk-bg.png" alt="wavy line"
+          class="header-bg-icons wavy-line-icon-drk-bg-1">
+        <img src="./assets/images/icons8-wavy-line-64-drk-bg.png" alt="wavy line"
+          class="header-bg-icons wavy-line-icon-drk-bg-2">
+        <img src="./assets/images/icons8-wavy-line-96-drk-bg.png" alt="wavy line"
+          class="header-bg-icons wavy-line-icon-drk-bg-3">
       </div>
       <h2 class="text-center" id="contact">Contact me</h2>
       <p class="contact-me-para text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
