@@ -530,7 +530,7 @@ button:disabled {
   }
 
   h2 {
-    margin-top: 330px;
+    margin-top: calc(88px * 3.75);
   }
 
   button {
@@ -538,7 +538,7 @@ button:disabled {
   }
 
   .header {
-    border-radius: 0 0 0 176px;
+    border-radius: 0 0 0 calc(88px * 2);
   }
 
   /* Navbar */
@@ -572,12 +572,12 @@ button:disabled {
   }
 
   .social-media-links-top {
-    margin-bottom: 242px;
+    margin-bottom: calc(88px * 2.75);
   }
 
   /* Main */
   .project-section {
-    margin: 74.8px 0;
+    margin: calc(44px * 1.7) 0;
     width: 100%;
     max-width: 1156px;
     position: relative;
@@ -636,11 +636,11 @@ button:disabled {
 
   /* Footer */
   .footer {
-    border-radius: 0 176px 0 0;
+    border-radius: 0 calc(88px * 2) 0 0;
   }
 
   .contact-me {
-    border-radius: 176px 0 0 0;
+    border-radius: calc(88px * 2) 0 0 0;
   }
 }
 

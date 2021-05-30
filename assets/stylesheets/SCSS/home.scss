@@ -291,7 +291,7 @@
   }
 
   h2 {
-    margin-top: 88px*3.75;
+    margin-top: calc(88px * 3.75);
   }
 
   button {
@@ -299,7 +299,7 @@
   }
 
   .header {
-    border-radius: 0 0 0 88px*2;
+    border-radius: 0 0 0 calc(88px * 2);
   }
 
   /* Navbar */
@@ -336,12 +336,12 @@
   }
 
   .social-media-links-top {
-    margin-bottom: 88px*2.75;
+    margin-bottom: calc(88px * 2.75);
   }
 
   /* Main */
   .project-section {
-    margin: 44px*1.7 0;
+    margin: calc(44px * 1.7) 0;
     width: 100%;
     max-width: $extra-wide-content;
     position: relative;
@@ -401,10 +401,10 @@
   /* Footer */
 
   .footer {
-    border-radius: 0 88px*2 0 0;
+    border-radius: 0 calc(88px * 2) 0 0;
   }
 
   .contact-me {
-    border-radius: 88px*2 0 0 0;
+    border-radius: calc(88px * 2) 0 0 0;
   }
 }
