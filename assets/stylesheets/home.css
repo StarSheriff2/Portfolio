@@ -620,6 +620,10 @@ button:disabled {
     line-height: 1.2rem;
   }
 
+  .modal-dialog {
+    max-width: 1156px;
+  }
+
   /* Footer */
   .footer {
     border-radius: 0 176px 0 0;

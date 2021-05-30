@@ -384,6 +384,10 @@
     line-height: 1.2rem;
   }
 
+  .modal-dialog {
+    max-width: $extra-wide-content;
+  }
+
   /* Footer */
 
   .footer {
