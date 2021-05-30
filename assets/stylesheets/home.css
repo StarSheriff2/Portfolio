@@ -622,6 +622,7 @@ button:disabled {
 
   .modal-dialog {
     max-width: 1156px;
+    margin: 3.5rem auto;
   }
 
   /* Footer */
