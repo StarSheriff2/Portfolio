@@ -329,6 +329,12 @@ button:disabled {
 }
 
 /* Navbar */
+.nav-wrapper-scroll-class {
+  background-color: #fff;
+  box-shadow: 0 0.55rem 8px rgba(235, 235, 255, 0.84);
+  transition: top 0.3s;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -485,8 +491,8 @@ button:disabled {
   opacity: 50%;
 }
 
-.contact-me,
-.contact-me h2 {
+.contact-me h2,
+.contact-me form {
   position: relative;
   z-index: 3;
 }
@@ -539,12 +545,6 @@ button:disabled {
     left: 0;
     z-index: 100;
     transition: top 0.3s;
-  }
-
-  .nav-wrapper-scroll-class {
-    background-color: #fff;
-    border: 1px solid #dfe1e6;
-    box-shadow: 0 0.7rem 10px rgba(235, 235, 255, 0.84);
   }
 
   .navbar {
