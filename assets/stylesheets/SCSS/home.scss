@@ -197,6 +197,10 @@
   font-size: 0.94rem;
 }
 
+.modal-footer {
+  justify-content: normal;
+}
+
 /*
   =======================
   Footer
@@ -387,6 +391,11 @@
   .modal-dialog {
     max-width: $extra-wide-content;
     margin: 3.5rem auto;
+  }
+
+  .modal-button {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   /* Footer */

@@ -441,6 +441,10 @@ button:disabled {
   font-size: 0.94rem;
 }
 
+.modal-footer {
+  justify-content: normal;
+}
+
 /*
   =======================
   Footer
@@ -623,6 +627,11 @@ button:disabled {
   .modal-dialog {
     max-width: 1156px;
     margin: 3.5rem auto;
+  }
+
+  .modal-button {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   /* Footer */
