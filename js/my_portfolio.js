@@ -7,12 +7,25 @@ function closeNav() {
 }
 
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+var navbarMobile = document.querySelector(".navbar")
+var navbarWrapper = document.querySelector(".nav-wrapper")
+const desktopViewport = window.matchMedia('(min-width: 768px)')
+
+function navbarEffect() {
+  var nav = desktopViewport.matches? navbarWrapper: navbarMobile;
   var currentScrollPos = window.pageYOffset;
+
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector(".navbar").style.top = "0";
+    nav.style.top = "0";
+    nav.classList.add("nav-wrapper-scroll-class");
+    if (window.scrollY == 0) {
+      nav.classList.remove("nav-wrapper-scroll-class");
+     }
   } else {
-    document.querySelector(".navbar").style.top = "-50px";
+    nav.style.top = `-${nav.getBoundingClientRect().height}px`
+    nav.classList.remove("nav-wrapper-scroll-class");
   }
   prevScrollpos = currentScrollPos;
 }
+
+window.addEventListener('scroll', (_) => navbarEffect());
