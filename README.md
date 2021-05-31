@@ -71,6 +71,9 @@ Give a ⭐️ if you like this project!
 - Inspiration
 - etc
 
+- Icons: <a target="_blank" href="https://icons8.com/icon/57371/cat">Cat</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line">Wavy Line</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
