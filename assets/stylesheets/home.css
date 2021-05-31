@@ -440,8 +440,14 @@ button:disabled {
   background: transparent url(../images/Screenshot-TicTacToe-Ruby.png) center/cover no-repeat;
 }
 
-.project-section-para {
+.project-section-para,
+.modal-footer-project-description p,
+.modal-footer-project-description li {
   font-size: 0.94rem;
+}
+
+.modal-footer-project-description li {
+  list-style: disc;
 }
 
 .modal-footer {
