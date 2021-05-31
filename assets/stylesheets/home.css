@@ -529,10 +529,6 @@ button:disabled {
     font-size: 20px;
   }
 
-  h2 {
-    margin-top: calc(88px * 3.75);
-  }
-
   button {
     font: 500 0.85rem/1.2rem "Poppins", sans-serif;
   }
@@ -565,6 +561,10 @@ button:disabled {
   .header-content-wrapper {
     max-width: 920px;
     margin: auto;
+  }
+
+  .header-content-wrapper h2 {
+    margin-top: calc(88px * 3.75);
   }
 
   .social-media-links .fab {
@@ -639,8 +639,28 @@ button:disabled {
     border-radius: 0 calc(88px * 2) 0 0;
   }
 
+  .about-myself {
+    max-width: 1156px;
+    margin: 0 auto;
+  }
+
+  .about-myself h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-top: calc(88px * 1.5);
+  }
+
+  .about-myself-details-wrapper {
+    margin-top: calc(88px * 1.5);
+  }
+
   .contact-me {
     border-radius: calc(88px * 2) 0 0 0;
+  }
+
+  .contact-me-content-wrapper {
+    max-width: 460px;
+    margin: 0 auto 88px;
   }
 }
 

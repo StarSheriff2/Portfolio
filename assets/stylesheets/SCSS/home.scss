@@ -290,10 +290,6 @@
     font-size: 20px;
   }
 
-  h2 {
-    margin-top: calc(88px * 3.75);
-  }
-
   button {
     @include font-styles($weight: 500, $font-size: 0.85rem, $line-height: 1.2rem);
   }
@@ -329,6 +325,10 @@
   .header-content-wrapper {
     max-width: $wide-content;
     margin: auto;
+  }
+
+  .header-content-wrapper h2 {
+    margin-top: calc(88px * 3.75);
   }
 
   .social-media-links .fab {
@@ -404,7 +404,27 @@
     border-radius: 0 calc(88px * 2) 0 0;
   }
 
+  .about-myself {
+    max-width: $extra-wide-content;
+    margin: 0 auto;
+  }
+
+  .about-myself h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    margin-top: calc(88px * 1.5);
+  }
+
+  .about-myself-details-wrapper {
+    margin-top: calc(88px * 1.5);
+  }
+
   .contact-me {
     border-radius: calc(88px * 2) 0 0 0;
+  }
+
+  .contact-me-content-wrapper {
+    max-width: $wide-content*0.5;
+    margin: 0 auto 88px;
   }
 }
