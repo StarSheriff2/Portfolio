@@ -350,6 +350,7 @@ button:disabled {
 
 .menu-button-mobile {
   color: #6070ff;
+  transform: scale(1.4, 1);
 }
 
 .social-media-links .fab {

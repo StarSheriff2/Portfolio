@@ -16,11 +16,11 @@
 <body>
   <!-- Mobile Overlay Nav -->
   <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onmousedown="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href="#portfolio" onclick="closeNav()">Portfolio</a>
-      <a href="#about" onclick="closeNav()">About</a>
-      <a href="#contact" onclick="closeNav()">Contact</a>
+      <a href="#portfolio" ontouchstart="closeNav()">Portfolio</a>
+      <a href="#about" ontouchstart="closeNav()">About</a>
+      <a href="#contact" ontouchstart="closeNav()">Contact</a>
     </div>
   </div>
   <!-- end -->
@@ -40,7 +40,7 @@
       <nav class="navbar mx-md-auto px-3 d-flex justify-content-between">
         <a href="/"><img class="reload-page-logo" src="./assets/images/sheriff-badge-logo.png"
             alt="star sheriff logo"></a>
-        <i class="fas fa-bars menu-button-mobile d-md-none" onclick="openNav()"></i>
+        <i class="fas fa-bars menu-button-mobile d-md-none" onmousedown="openNav()"></i>
         <ul class="nav-links-md d-none d-md-flex">
           <li class="me-md-4"><a href="#portfolio">Portfolio</a></li>
           <li class="me-md-4"><a href="#about">About</a></li>
