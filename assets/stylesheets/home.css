@@ -454,6 +454,7 @@ button:disabled {
 */
 .footer {
   border-radius: 0 88px 0 0;
+  position: relative;
 }
 
 .details-content-container {
@@ -518,6 +519,21 @@ button:disabled {
   background-color: #fff;
   position: relative;
   z-index: 3;
+}
+
+.attributions {
+  position: absolute;
+  bottom: 0.2rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+.attributions p,
+.attributions a {
+  color: #fff;
+  font-size: 0.5rem;
+  opacity: 0.5;
+  font-style: italic;
 }
 
 /*
