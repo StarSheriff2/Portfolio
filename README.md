@@ -4,7 +4,19 @@
 
 > This is my portfolio project. Here you will find some of my best projects so far as a full-stack developer.
 
-![screenshot](./app_screenshot.png)
+## Screenshots
+
+- ### Mobile
+
+![screenshot](./other/README-screenshots/app_screenshot_mobile.png)
+
+![screenshot](./other/README-screenshots/app_screenshot_mobile_bottom.png)
+
+- ### Desktop
+
+![screenshot](./other/README-screenshots/app_screenshot_desktop.png)
+
+![screenshot](./other/README-screenshots/app_screenshot_desktop_bottom.png)
 
 The website has a mobile-first approach, following best industry practices for design, colors, fonts, and layout.
 I used HTML, CSS, SCSS, Bootstrap 5, and some JS for this project. The page is fully responsive for two different screen sizes:
