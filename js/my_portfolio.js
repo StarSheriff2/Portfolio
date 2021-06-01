@@ -24,6 +24,9 @@ function navbarEffect() {
   } else {
     nav.style.top = `-${nav.getBoundingClientRect().height}px`
     nav.classList.remove("nav-wrapper-scroll-class");
+    if (window.scrollY == 0) {
+      nav.style.top = "0";
+     }
   }
   prevScrollpos = currentScrollPos;
 }
