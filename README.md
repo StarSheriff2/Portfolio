@@ -63,9 +63,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Icons: <a target="_blank" href="https://icons8.com/icon/57371/cat">Cat</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-<a target="_blank" href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line">Wavy Line</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- Icons: <a target="_blank" href="https://icons8.com/icon/57371/cat">Cat</a> icon and <a target="_blank" href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line">Wavy Line</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://github.com/StarSheriff2/Portfolio/blob/edit-readme/LICENSE) licensed.
