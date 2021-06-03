@@ -6,22 +6,29 @@
 
 ## Screenshots
 
-- ### Mobile
-
-![screenshot](./other/README-screenshots/app_screenshot_mobile.png)
-
-![screenshot](./other/README-screenshots/app_screenshot_mobile_bottom.png)
-
-- ### Desktop
-
 ![screenshot](./other/README-screenshots/app_screenshot_desktop.png)
 
-![screenshot](./other/README-screenshots/app_screenshot_desktop_bottom.png)
+### More Screenshots
+
+<details>
+  <summary>Mobile</summary>
+  <div><img src="./other/README-screenshots/app_screenshot_mobile.png"></div>
+  <br>
+  <div><img src="./other/README-screenshots/app_screenshot_mobile_bottom.png"></div>
+</details>
+
+<details>
+  <summary>Desktop</summary>
+  <div><img src="./other/README-screenshots/app_screenshot_desktop_bottom.png"></div>
+</details>
+
+<br>
 
 The website has a mobile-first approach, following best industry practices for design, colors, fonts, and layout.
-I used HTML, CSS, SCSS, Bootstrap 5, and some JS for this project. The page is fully responsive for two different screen sizes:
-  - mobile: up to 767px
-  - desktop: from 768px
+I used HTML, CSS, SCSS, Bootstrap 5, and some JS for this project. The page is fully responsive for two different screen
+sizes:
+- mobile: up to 767px
+- desktop: from 768px
 
 
 ## Built With
@@ -42,11 +49,15 @@ To get a local copy up and running, follow these simple steps.
 
 #### Clone / Download Repo
 1. Open your terminal or command prompt.
-2. If you do not have git installed in your system, skip this step and go to step 3; otherwise, go to the directory where you want to copy the project files and clone it by copying this text into your command prompt/terminal: `git@github.com:StarSheriff2/Portfolio.git`.
+2. If you do not have git installed in your system, skip this step and go to step 3; otherwise, go to the directory
+where you want to copy the project files and clone it by copying this text into your command prompt/terminal:
+`git@github.com:StarSheriff2/Portfolio.git`.
 <br>Now go to the ***"Install Dependencies"*** section
-3. Download the program files by clicking on the green button that says “**Code**“ on the upper right side of the project frame.
+3. Download the program files by clicking on the green button that says “**Code**“ on the upper right side of the
+project frame.
 4. You will see a dropdown menu. Click on “**Download ZIP**“.
-5. Go to the directory where you downloaded the **ZIP file** and open it. Extract its contents to any directory you want in your system.
+5. Go to the directory where you downloaded the **ZIP file** and open it. Extract its contents to any directory you want
+in your system.
 
 ## Usage
 1. Go to your browser of choice
@@ -75,7 +86,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Icons: <a target="_blank" href="https://icons8.com/icon/57371/cat">Cat</a> icon and <a target="_blank" href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line">Wavy Line</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- Icons: <a target="_blank" href="https://icons8.com/icon/57371/cat">Cat</a> icon and <a target="_blank"
+  href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line">Wavy Line</a> icon by <a target="_blank"
+  href="https://icons8.com">Icons8</a>
 
 ## 📝 License
 
