@@ -8,9 +8,13 @@
 
 - ### Mobile
 
-![screenshot](./other/README-screenshots/app_screenshot_mobile.png)
-
-![screenshot](./other/README-screenshots/app_screenshot_mobile_bottom.png)
+<details>
+<summary>Mobile</summary>
+<img source="./other/README-screenshots/app_screenshot_mobile.png">
+<!-- ![screenshot](./other/README-screenshots/app_screenshot_mobile.png) -->
+<img source="./other/README-screenshots/app_screenshot_mobile_bottom.png">
+<!-- ![screenshot](./other/README-screenshots/app_screenshot_mobile_bottom.png) -->
+</details>
 
 - ### Desktop
 
