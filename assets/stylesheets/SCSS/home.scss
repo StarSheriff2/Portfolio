@@ -136,6 +136,7 @@
   height: 0;
   position: relative;
   border-radius: 8px;
+  box-shadow: 0 0.35rem 11px 1px rgba(102, 102, 117, 0.15);
 }
 
 .screenshot-div-frame-1-bg-color {
@@ -169,31 +170,34 @@
   right: $spacer * 1.25;
   bottom: $spacer * 1.75;
   z-index: 1;
-  box-shadow: 0 0.75rem 10px rgba(0, 0, 0, 0.24);
 }
 
 .project-screenshot-1-background {
-  background: transparent url(../images/Screenshot-Newsweek-HTML-CSS.png) center top/cover no-repeat;
+  background: transparent url(../images/Screenshot-Newsweek-HTML-CSS.png) center center/contain no-repeat;
 }
 
 .project-screenshot-2-background {
-  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) left/contain no-repeat;
+  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) center/contain no-repeat;
 }
 
 .project-screenshot-3-background {
-  background: transparent url(../images/Screenshot-SocialScaffold-Rails.png) center/cover no-repeat;
+  background: transparent url(../images/Screenshot-SocialScaffold-Rails.png) center/contain no-repeat;
 }
 
 .project-screenshot-4-background {
-  background: transparent url(../images/Screenshot-SalsaFestival2020-HTML-SCSS.png) center/cover no-repeat;
+  background: transparent url(../images/Screenshot-SalsaFestival2020-HTML-SCSS.png) center/contain no-repeat;
 }
 
 .project-screenshot-5-background {
-  background: transparent url(../images/Screenshot-MD-Cleaner-Ruby.png) center/cover no-repeat;
+  background: transparent url(../images/Screenshot-MD-Cleaner-Ruby.png) center/contain no-repeat;
 }
 
 .project-screenshot-6-background {
-  background: transparent url(../images/Screenshot-TicTacToe-Ruby.png) center/cover no-repeat;
+  background: transparent url(../images/Screenshot-TicTacToe-Ruby.png) center/contain no-repeat;
+}
+
+.modal-body .screenshot-div-frame {
+  box-shadow: 0 0.4rem 7px 1px rgba(102, 102, 117, 0.2);
 }
 
 .project-section-para,
@@ -312,11 +316,12 @@
   /* Global Stylings */
 
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   button {
     @include font-styles($weight: 500, $font-size: 0.85rem, $line-height: 1.2rem);
+    padding: 0.55rem;
   }
 
   .header {
@@ -424,7 +429,10 @@
     position: relative;
     border: none;
     border-radius: 24px;
-    height: 65vh;
+  }
+
+  .screenshot-div-frame {
+    box-shadow: 0 0.9rem 11px 1px rgba(102, 102, 117, 0.3);
   }
 
   .project-md-stretched-link {
@@ -454,25 +462,23 @@
     background-color: $button-pressed;
   }
 
-  .screenshot-div-frame {
-    padding-top: calc(65vh - 3rem);
-    height: 0;
-    position: relative;
-    border-radius: 8px;
+  .project-screenshot-2-background {
+    box-shadow: none;
   }
 
-  .project-screenshot-div-container {
-    top: $spacer * 3;
-    left: $spacer * 0.5;
-    right: $spacer * 0.5;
-    bottom: $spacer * 3;
-    z-index: 1;
-    box-shadow: 0 0.75rem 10px rgba(0, 0, 0, 0.24);
+  .caption {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 
   .project-section-para {
     font-size: 0.8rem;
     line-height: 1.2rem;
+  }
+
+  .project-tag {
+    font-size: 0.6rem;
+    line-height: 0.7rem;
   }
 
   .modal-dialog {
@@ -524,5 +530,19 @@
   .contact-me-content-wrapper {
     max-width: $wide-content*0.5;
     margin: 0 auto 88px;
+  }
+}
+
+/*
+  =======================
+  Media Query: MD
+  =======================
+*/
+
+@media (min-width: 992px) {
+  /* Global Stylings */
+
+  html {
+    font-size: 20px;
   }
 }
