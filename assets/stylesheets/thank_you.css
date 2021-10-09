@@ -69,6 +69,7 @@ main {
 }
 
 .modal-footer {
+  justify-content: normal;
   border-top: none;
 }
 
@@ -216,5 +217,3 @@ button:disabled {
 .social-media-links .fab {
   color: #505f79;
 }
-
-/*# sourceMappingURL=thank_you.css.map */

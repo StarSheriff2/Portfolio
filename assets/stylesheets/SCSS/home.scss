@@ -193,7 +193,7 @@
 }
 
 .project-screenshot-6-background {
-  background: transparent url(../images/Screenshot-TicTacToe-Ruby.png) center/contain no-repeat;
+  background: url(../images/Screenshot-GNI-per-Capita-in-the-World.png) 20%/contain no-repeat, url(../images/Screenshot-GNI-per-Capita-in-the-World2.png) 80%/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {
@@ -201,17 +201,13 @@
 }
 
 .project-section-para,
-.modal-footer-project-description p,
-.modal-footer-project-description li {
+.modal-footer-project-description p {
   font-size: 0.94rem;
 }
 
 .modal-footer-project-description li {
+  font-size: 0.94rem;
   list-style: disc;
-}
-
-.modal-footer {
-  justify-content: normal;
 }
 
 /*
@@ -299,7 +295,7 @@
 }
 
 .attributions p,
-.attributions a {
+.attributions-link {
   color: $white;
   font-size: 0.5rem;
   opacity: 0.5;
