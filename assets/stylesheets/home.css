@@ -69,6 +69,7 @@ main {
 }
 
 .modal-footer {
+  justify-content: normal;
   border-top: none;
 }
 
@@ -263,6 +264,7 @@ button:disabled {
   border-radius: 0 0 0 88px;
   position: relative;
 }
+
 .header h2,
 .header p,
 .header h5,
@@ -450,17 +452,13 @@ button:disabled {
 }
 
 .project-section-para,
-.modal-footer-project-description p,
-.modal-footer-project-description li {
+.modal-footer-project-description p {
   font-size: 0.94rem;
 }
 
 .modal-footer-project-description li {
+  font-size: 0.94rem;
   list-style: disc;
-}
-
-.modal-footer {
-  justify-content: normal;
 }
 
 /*
@@ -545,7 +543,7 @@ button:disabled {
 }
 
 .attributions p,
-.attributions a {
+.attributions-link {
   color: #fff;
   font-size: 0.5rem;
   opacity: 0.5;
@@ -769,6 +767,7 @@ button:disabled {
     margin: 0 auto 88px;
   }
 }
+
 /*
   =======================
   Media Query: MD
@@ -780,5 +779,3 @@ button:disabled {
     font-size: 20px;
   }
 }
-
-/*# sourceMappingURL=home.css.map */
