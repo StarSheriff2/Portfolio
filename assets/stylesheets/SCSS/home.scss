@@ -10,6 +10,7 @@
 .header {
   border-radius: 0 0 0 88px;
   position: relative;
+  height: 100vh;
 
   h2,
   p,
@@ -411,10 +412,7 @@
   .header-content-wrapper {
     max-width: $wide-content;
     margin: auto;
-  }
-
-  .header-content-wrapper h2 {
-    margin-top: calc(88px * 3.75);
+    margin-top: calc(44px * 4.75);
   }
 
   .social-media-links .fab {

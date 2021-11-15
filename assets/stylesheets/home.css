@@ -263,6 +263,7 @@ button:disabled {
 .header {
   border-radius: 0 0 0 88px;
   position: relative;
+  height: 100vh;
 }
 .header h2,
 .header p,
@@ -651,10 +652,7 @@ button:disabled {
   .header-content-wrapper {
     max-width: 920px;
     margin: auto;
-  }
-
-  .header-content-wrapper h2 {
-    margin-top: calc(88px * 3.75);
+    margin-top: calc(44px * 4.75);
   }
 
   .social-media-links .fab {
