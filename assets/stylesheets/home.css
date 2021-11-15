@@ -264,7 +264,6 @@ button:disabled {
   border-radius: 0 0 0 88px;
   position: relative;
 }
-
 .header h2,
 .header p,
 .header h5,
@@ -767,7 +766,6 @@ button:disabled {
     margin: 0 auto 88px;
   }
 }
-
 /*
   =======================
   Media Query: MD
@@ -779,3 +777,5 @@ button:disabled {
     font-size: 20px;
   }
 }
+
+/*# sourceMappingURL=home.css.map */
