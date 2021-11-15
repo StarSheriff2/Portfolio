@@ -413,6 +413,10 @@ button:disabled {
   background-color: #ebebff;
 }
 
+.screenshot-div-frame-7-bg-color {
+  background-color: #f28729;
+}
+
 .project-screenshot-div-container {
   position: absolute;
   top: 1.75rem;
@@ -444,6 +448,10 @@ button:disabled {
 
 .project-screenshot-6-background {
   background: url(../images/Screenshot-GNI-per-Capita-in-the-World.png) 20%/contain no-repeat, url(../images/Screenshot-GNI-per-Capita-in-the-World2.png) 80%/contain no-repeat;
+}
+
+.project-screenshot-7-background {
+  background: transparent url(../images/Screenshot-Expert-Class.png) center/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {
