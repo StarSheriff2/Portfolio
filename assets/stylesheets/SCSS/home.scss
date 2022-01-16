@@ -87,7 +87,7 @@
 }
 
 .header-content-wrapper {
-  height: 100vh;
+  height: calc(100vh - 1.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +95,7 @@
 
 .profile-pic-frame {
   margin-top: 40px;
-  max-width: 45vw;
+  max-width: $profile-pic-frame-width;
   align-self: center;
   border-radius: 50%;
   border: $inline-section-header 0.25rem solid;
@@ -353,17 +353,17 @@
 @media (min-width: 400px) {
   /* Global Stylings */
 
-  .header-title {
-    margin-top: 0.6rem;
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
+  // .header-title {
+  //   margin-top: 0.6rem;
+  //   font-size: 2rem;
+  //   line-height: 2.25rem;
+  // }
 
-  .header-text {
-    margin-top: 0.4rem;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
+  // .header-text {
+  //   margin-top: 0.4rem;
+  //   font-size: 1.2rem;
+  //   line-height: 1.6rem;
+  // }
 }
 
 /*
@@ -466,8 +466,25 @@
 
   .header-content-wrapper {
     max-width: $wide-content;
-    margin: auto;
-    margin-top: calc(44px * 4.75);
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .profile-pic-frame {
+    margin-top: 0;
+    border: $inline-section-header 0.35rem solid;
+  }
+
+  .header-title {
+    margin-top: 0.6rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .header-text {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
   .social-media-links .fab {
@@ -475,7 +492,7 @@
   }
 
   .social-media-links-top {
-    margin-bottom: calc(88px * 2.75);
+    margin-bottom: 0;
   }
 
   /* Main */
@@ -593,7 +610,7 @@
 
 /*
   =======================
-  Media Query: MD
+  Media Query: XLG
   =======================
 */
 
@@ -602,5 +619,9 @@
 
   html {
     font-size: 20px;
+  }
+
+  .profile-pic-frame {
+    max-width: $profile-pic-frame-width-xlg;
   }
 }
