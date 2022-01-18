@@ -236,6 +236,7 @@ summary::before {
 
 details[open] > summary::before {
   transform: rotate(90deg);
+  transition: 0.25s transform ease;
 }
 
 .overlay {
