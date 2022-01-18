@@ -15,7 +15,9 @@
   h2,
   p,
   h5,
-  ul {
+  ul,
+  div.profile-pic-frame,
+  img.profile-pic {
     z-index: 3;
     position: relative;
   }
@@ -82,6 +84,37 @@
   left: 0;
   transform: rotate(90deg);
   opacity: 80%;
+}
+
+.header-content-wrapper {
+  height: calc(100vh - 1.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-pic-frame {
+  margin-top: 40px;
+  max-width: $profile-pic-frame-width;
+  align-self: center;
+  border-radius: 50%;
+  border: $inline-section-header 0.25rem solid;
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+}
+
+.header-title {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.75rem;
+}
+
+.header-text {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }
 
 /* Navbar */
@@ -313,6 +346,28 @@
 
 /*
   =======================
+  Media Query: SM
+  =======================
+*/
+
+@media only screen and (min-width: 400px) {
+  /* Global Stylings */
+
+  .header-title {
+    margin-top: 0.6rem;
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .header-text {
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
+
+/*
+  =======================
   Media Query: MD
   =======================
 */
@@ -411,8 +466,25 @@
 
   .header-content-wrapper {
     max-width: $wide-content;
-    margin: auto;
-    margin-top: calc(44px * 4.75);
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .profile-pic-frame {
+    margin-top: 0;
+    border: $inline-section-header 0.35rem solid;
+  }
+
+  .header-title {
+    margin-top: 0.6rem;
+    font-size: 1.8rem;
+    line-height: 2.05rem;
+  }
+
+  .header-text {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
 
   .social-media-links .fab {
@@ -420,7 +492,7 @@
   }
 
   .social-media-links-top {
-    margin-bottom: calc(88px * 2.75);
+    margin-bottom: 2.4rem;
   }
 
   /* Main */
@@ -538,7 +610,7 @@
 
 /*
   =======================
-  Media Query: MD
+  Media Query: XLG
   =======================
 */
 
@@ -547,5 +619,9 @@
 
   html {
     font-size: 20px;
+  }
+
+  .profile-pic-frame {
+    max-width: $profile-pic-frame-width-xlg;
   }
 }
