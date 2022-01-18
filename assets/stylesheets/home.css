@@ -236,7 +236,6 @@ summary::before {
 
 details[open] > summary::before {
   transform: rotate(90deg);
-  transition: 0.25s transform ease;
 }
 
 .overlay {
@@ -294,7 +293,6 @@ details[open] > summary::before {
   position: relative;
   height: 100vh;
 }
-
 .header h2,
 .header p,
 .header h5,
@@ -640,7 +638,6 @@ details[open] > summary::before {
     line-height: 1.6rem;
   }
 }
-
 /*
   =======================
   Media Query: MD
@@ -872,7 +869,6 @@ details[open] > summary::before {
     margin: 0 auto 88px;
   }
 }
-
 /*
   =======================
   Media Query: XLG
@@ -888,3 +884,5 @@ details[open] > summary::before {
     max-width: 202.4px;
   }
 }
+
+/*# sourceMappingURL=home.css.map */

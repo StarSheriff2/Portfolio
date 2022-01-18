@@ -236,7 +236,6 @@ summary::before {
 
 details[open] > summary::before {
   transform: rotate(90deg);
-  transition: 0.25s transform ease;
 }
 
 .thank-you-h2 {
@@ -246,3 +245,5 @@ details[open] > summary::before {
 .social-media-links .fab {
   color: #505f79;
 }
+
+/*# sourceMappingURL=thank_you.css.map */
