@@ -73,10 +73,10 @@
       <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" class="header-text">I'm a full-stack software
         developer. Feel free to browse through my projects. If you like what you see and
         there's a project you need help with, please don't hesitate to get in touch!</p>
-      <h5 data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000"
+      <h5 data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="300" data-aos-duration="1000"
         data-aos-delay="700" class="social-media-links-top-title">Let's Connect</h5>
       <ul class="social-media-links social-media-links-top d-flex" data-aos="fade-left"
-        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000" data-aos-delay="700">
+        data-aos-anchor="#example-anchor" data-aos-offset="300" data-aos-duration="1000" data-aos-delay="700">
         <li class="me-3"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ArturoAlvarezV"><i
               class="fab fa-twitter"></i></a></li>
         <li class="me-3"><a rel="noopener noreferrer" target="_blank"
@@ -89,6 +89,7 @@
   </header>
   <main class="main d-flex flex-column align-items-center">
     <div id="projects" class="portfolio-projects-marker"></div>
+    <div id="project-container"></div>
     <section class="project-section p-4 container-md" data-aos="fade-right" data-aos-duration="1000">
       <div class="row">
         <div class="col-md me-md-3 d-md-grid align-content-center">
@@ -976,6 +977,14 @@
   <script>
     AOS.init();
   </script>
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
 </body>
 
 </html>

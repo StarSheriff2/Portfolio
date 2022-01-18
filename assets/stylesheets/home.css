@@ -375,7 +375,7 @@ details[open] > summary::before {
 
 .profile-pic-frame {
   margin-top: 40px;
-  max-width: 138px;
+  width: 138px;
   align-self: center;
   border-radius: 50%;
   border: #7f8cff 0.25rem solid;
@@ -621,11 +621,36 @@ details[open] > summary::before {
 
 /*
   =======================
+  Media Query: XSM Landscape
+  =======================
+*/
+@media only screen and (max-height: 564px) {
+  .profile-pic-frame {
+    display: none;
+  }
+
+  .header-title {
+    margin-top: 6rem;
+    font-size: 1.8rem;
+    line-height: 2.05rem;
+  }
+
+  .header-text {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+/*
+  =======================
   Media Query: SM
   =======================
 */
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) and (min-height: 565px) {
   /* Global Stylings */
+  .profile-pic-frame {
+    margin-bottom: 2rem;
+  }
+
   .header-title {
     margin-top: 0.6rem;
     font-size: 2rem;
@@ -882,6 +907,17 @@ details[open] > summary::before {
 
   .profile-pic-frame {
     max-width: 202.4px;
+  }
+}
+/*
+  =======================
+  Media Query: XXLG
+  =======================
+*/
+@media (min-width: 992px) {
+  /* Global Stylings */
+  .profile-pic-frame {
+    width: 386.4px;
   }
 }
 

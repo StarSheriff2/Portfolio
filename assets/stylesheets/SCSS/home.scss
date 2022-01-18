@@ -95,7 +95,7 @@
 
 .profile-pic-frame {
   margin-top: 40px;
-  max-width: $profile-pic-frame-width;
+  width: $profile-pic-frame-width;
   align-self: center;
   border-radius: 50%;
   border: $inline-section-header 0.25rem solid;
@@ -346,12 +346,40 @@
 
 /*
   =======================
+  Media Query: XSM Landscape
+  =======================
+*/
+
+@media only screen and (max-height: 564px) {
+
+  .profile-pic-frame {
+    display: none;
+  }
+
+  .header-title {
+    margin-top: 6rem;
+    font-size: 1.8rem;
+    line-height: 2.05rem;
+  }
+
+  .header-text {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+/*
+  =======================
   Media Query: SM
   =======================
 */
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) and (min-height: 565px) {
   /* Global Stylings */
+
+  .profile-pic-frame {
+    margin-bottom: 2rem;
+  }
 
   .header-title {
     margin-top: 0.6rem;
@@ -623,5 +651,19 @@
 
   .profile-pic-frame {
     max-width: $profile-pic-frame-width-xlg;
+  }
+}
+
+/*
+  =======================
+  Media Query: XXLG
+  =======================
+*/
+
+@media (min-width: 992px) {
+  /* Global Stylings */
+
+  .profile-pic-frame {
+    width: $profile-pic-frame-width-xxlg;
   }
 }
