@@ -4,7 +4,7 @@ var _React = React,
     useState = _React.useState;
 
 
-function Project() {
+var Project = function Project() {
 
   return React.createElement(
     "section",

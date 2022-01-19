@@ -1,7 +1,7 @@
 'use strict';
 const { useState } = React;
 
-function Project() {
+const Project = () => {
 
   return (
     <section class="project-section p-4 container-md" data-aos="fade-right" data-aos-duration="1000">
