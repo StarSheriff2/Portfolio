@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Portfolio
 
 > This is my portfolio project. Here you will find some of my best projects so far as a full-stack developer.
