@@ -1,450 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Arturo's Portfolio" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/starsheriff/image/upload/v1630125563/app_screenshot_portfolio_x8mpow.png"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="This is a collection of some of my best projects. A live version of each project is included with every project."
+    />
+    <meta
+      property="og:url"
+      content="https://starsheriff2.github.io/Portfolio/"
+    />
+    <title>Arturo's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/stylesheets/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5DCB30NJ46"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Arturo's Portfolio" />
-  <meta property="og:image"
-    content="https://res.cloudinary.com/starsheriff/image/upload/v1630125563/app_screenshot_portfolio_x8mpow.png" />
-  <meta name="description" property="og:description"
-    content="This is a collection of some of my best projects. A live version of each project is included with every project." />
-  <meta property="og:url" content="https://starsheriff2.github.io/Portfolio/" />
-  <title>Arturo's Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/stylesheets/home.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DCB30NJ46"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+      gtag('config', 'G-5DCB30NJ46');
+    </script>
+  </head>
 
-    gtag('config', 'G-5DCB30NJ46');
-  </script>
-</head>
-
-<body>
-  <!-- Mobile Overlay Nav -->
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onmousedown="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#projects" onmousedown="closeNav()">Projects</a>
-      <a href="#about" onmousedown="closeNav()">About</a>
-      <a href="#contact" onmousedown="closeNav()">Contact</a>
+  <body>
+    <!-- Mobile Overlay Nav -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onmousedown="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#projects" onmousedown="closeNav()">Projects</a>
+        <a href="#about" onmousedown="closeNav()">About</a>
+        <a href="#contact" onmousedown="closeNav()">Contact</a>
+      </div>
     </div>
-  </div>
-  <!-- end -->
-  <header class="header p-4">
-    <div class="background-icons-wrapper overflow-hidden">
-      <img src="./assets/images/icons8-cat-64.png" alt="cat icon" class="header-bg-icons cat-icon">
-      <img src="./assets/images/icons8-netflix-256.png" alt="netflix logo" class="header-bg-icons netflix-icon">
-      <img src="./assets/images/icons8-cat-64.png" alt="cat icon" class="header-bg-icons cat-icon-2">
-      <img src="./assets/images/icons8-super-mario-64.png" alt="super mario icon"
-        class="header-bg-icons supermario-icon">
-      <img src="./assets/images/icons8-wavy-line-64.png" alt="wavy line" class="header-bg-icons wavy-line-icon">
-      <img src="./assets/images/icons8-wavy-line-64.png" alt="wavy line" class="header-bg-icons wavy-line-icon-2">
-      <img src="./assets/images/icons8-wavy-line-96.png" alt="wavy line" class="header-bg-icons wavy-line-icon-3">
-    </div>
-    <h1 class="hidden">My Portfolio</h1>
-    <div class="nav-wrapper d-md-block py-md-2">
-      <nav class="navbar mx-md-auto px-3 d-flex justify-content-between">
-        <a href="/"><img class="reload-page-logo" src="./assets/images/sheriff-badge-logo.png"
-            alt="star sheriff logo"></a>
-        <i class="fas fa-bars menu-button-mobile d-md-none" onmousedown="openNav()"></i>
-        <ul class="nav-links-md d-none d-md-flex">
-          <li class="me-md-4"><a href="#projects">Projects</a></li>
-          <li class="me-md-4"><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <!-- end -->
+    <header class="header p-4">
+      <div class="background-icons-wrapper overflow-hidden">
+        <img
+          src="./assets/images/icons8-cat-64.png"
+          alt="cat icon"
+          class="header-bg-icons cat-icon"
+        />
+        <img
+          src="./assets/images/icons8-netflix-256.png"
+          alt="netflix logo"
+          class="header-bg-icons netflix-icon"
+        />
+        <img
+          src="./assets/images/icons8-cat-64.png"
+          alt="cat icon"
+          class="header-bg-icons cat-icon-2"
+        />
+        <img
+          src="./assets/images/icons8-super-mario-64.png"
+          alt="super mario icon"
+          class="header-bg-icons supermario-icon"
+        />
+        <img
+          src="./assets/images/icons8-wavy-line-64.png"
+          alt="wavy line"
+          class="header-bg-icons wavy-line-icon"
+        />
+        <img
+          src="./assets/images/icons8-wavy-line-64.png"
+          alt="wavy line"
+          class="header-bg-icons wavy-line-icon-2"
+        />
+        <img
+          src="./assets/images/icons8-wavy-line-96.png"
+          alt="wavy line"
+          class="header-bg-icons wavy-line-icon-3"
+        />
+      </div>
+      <h1 class="hidden">My Portfolio</h1>
+      <div class="nav-wrapper d-md-block py-md-2">
+        <nav class="navbar mx-md-auto px-3 d-flex justify-content-between">
+          <a href="/"
+            ><img
+              class="reload-page-logo"
+              src="./assets/images/sheriff-badge-logo.png"
+              alt="star sheriff logo"
+          /></a>
+          <i
+            class="fas fa-bars menu-button-mobile d-md-none"
+            onmousedown="openNav()"
+          ></i>
+          <ul class="nav-links-md d-none d-md-flex">
+            <li class="me-md-4"><a href="#projects">Projects</a></li>
+            <li class="me-md-4"><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-content-wrapper">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          class="profile-pic-frame overflow-hidden"
+        >
+          <img
+            src="./assets/images/profile_pic.png"
+            alt="arturo profile picture"
+            class="profile-pic"
+          />
+        </div>
+        <h2 data-aos="fade-right" data-aos-duration="1000" class="header-title">
+          I'm Arturo Alvarez!<br />Welcome to my portfolio!
+        </h2>
+        <p
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+          class="header-text"
+        >
+          I'm a full-stack software developer. Feel free to browse through my
+          projects. If you like what you see and there's a project you need help
+          with, please don't hesitate to get in touch!
+        </p>
+        <h5
+          data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1000"
+          data-aos-delay="700"
+          class="social-media-links-top-title"
+        >
+          Let's Connect
+        </h5>
+        <ul
+          class="social-media-links social-media-links-top d-flex"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="1000"
+          data-aos-delay="700"
+        >
+          <li class="me-3">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://twitter.com/ArturoAlvarezV"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="me-3">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/arturoalvarezv/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="me-3">
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://github.com/StarSheriff2"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
         </ul>
-      </nav>
-    </div>
-    <div class="header-content-wrapper">
-      <div data-aos="fade-left" data-aos-duration="1000" class="profile-pic-frame overflow-hidden"><img src="./assets/images/profile_pic.png" alt="arturo profile picture" class="profile-pic"></div>
-      <h2 data-aos="fade-right" data-aos-duration="1000" class="header-title">I'm Arturo Alvarez!<br>Welcome to my portfolio!</h2>
-      <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" class="header-text">I'm a full-stack software
-        developer. Feel free to browse through my projects. If you like what you see and
-        there's a project you need help with, please don't hesitate to get in touch!</p>
-      <h5 data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000"
-        data-aos-delay="700" class="social-media-links-top-title">Let's Connect</h5>
-      <ul class="social-media-links social-media-links-top d-flex" data-aos="fade-left"
-        data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000" data-aos-delay="700">
-        <li class="me-3"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ArturoAlvarezV"><i
-              class="fab fa-twitter"></i></a></li>
-        <li class="me-3"><a rel="noopener noreferrer" target="_blank"
-            href="https://www.linkedin.com/in/arturoalvarezv/"><i class="fab fa-linkedin-in"></i></a>
-        </li>
-        <li class="me-3"><a rel="noopener noreferrer" target="_blank" href="https://github.com/StarSheriff2"><i
-              class="fab fa-github"></i></a></li>
-      </ul>
-    </div>
-  </header>
-  <main class="main d-flex flex-column align-items-center">
-    <div id="projects" class="portfolio-projects-marker"></div>
-    <section class="project-section p-4 container-md" data-aos="fade-right" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-md me-md-3 d-md-grid align-content-center">
-          <div class="screenshot-div-frame screenshot-div-frame-7-bg-color mb-3 mb-md-0">
-            <div class="project-screenshot-div-container project-screenshot-7-background">
+      </div>
+    </header>
+    <main class="main d-flex flex-column align-items-center">
+      <div id="projects" class="portfolio-projects-marker"></div>
+      <section
+        class="project-section p-4 container-md"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
+        <div class="row">
+          <div class="col-md me-md-3 d-md-grid align-content-center">
+            <div
+              class="screenshot-div-frame screenshot-div-frame-7-bg-color mb-3 mb-md-0"
+            >
+              <div
+                class="project-screenshot-div-container project-screenshot-7-background"
+              ></div>
             </div>
           </div>
-        </div>
-        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2">
-          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
-            data-bs-target="#project7"></a>
-          <h3>Expert Class</h3>
-          <ul class="d-flex flex-wrap mb-md-4">
-            <li><span class="caption caption-bold">Web App</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">Full-Stack Dev</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">2021</span></li>
-          </ul>
-          <p class="project-section-para">This app allows users to sign up for a class taught by experts and gurus.
-            The backend is a RoR RESTful API hosted in Heroku, and a frontend React app hosted in Netlify. I used Redux toolkit
-            to handle the global state.
-          </p>
-          <ul class="d-flex flex-wrap">
-            <li class="project-tag ms-0">ruby on rails</li>
-            <li class="project-tag">react - redux</li>
-            <li class="project-tag">html - css - javascript</li>
-            <li class="project-tag">styled components</li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#project7">See Project</button>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="project7" tabindex="-1" aria-labelledby="project6" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-md-0">
-              <h3 class="modal-title" id="expert-class">Expert Class</h3>
-              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <ul class="d-flex flex-wrap px-3 mb-md-2">
-              <li><span class="caption caption-bold">Booking App</span></li>
+          <div
+            class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2"
+          >
+            <a
+              href="#"
+              class="project-md-stretched-link d-none d-md-block stretched-link"
+              data-bs-toggle="modal"
+              data-bs-target="#project7"
+            ></a>
+            <h3>Expert Class</h3>
+            <ul class="d-flex flex-wrap mb-md-4">
+              <li><span class="caption caption-bold">Web App</span></li>
               <li class="neutral-bullet-point mx-2">•</li>
               <li><span class="caption">Full-Stack Dev</span></li>
               <li class="neutral-bullet-point mx-2">•</li>
               <li><span class="caption">2021</span></li>
             </ul>
-            <div class="modal-body">
-              <div class="screenshot-div-frame screenshot-div-frame-7-bg-color">
-                <div class="project-screenshot-div-container project-screenshot-7-background">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer pt-0 pb-3">
-              <div class="container-fluid-md w-100">
-                <div class="row">
-                  <div class="modal-footer-project-description col-md-8">
-                    <p class="project-section-para mt-0">In this app, users can register an account to book classes
-                      with experts
-                      in different topics from all over the world.
-                      Users can create new classes, delete them and view them. They can also reserve a class or view
-                      all their current reservations.
-                      I built this project with a group of developers using Github's Kanban board.<br><br>
-
-                      We built the backend with <strong>Ruby on Rails</strong>, <strong>PostgreSQL</strong> for the database, <strong>ReactJS</strong> for
-                      the frontend, and <strong>Redux</strong> for the global state management. React was bootstrapped
-                      with <i>
-                        <a rel="noopener noreferrer" href="https://github.com/facebook/create-react-app"
-                          target='_blank'>create-react-app</a></i>.<br><br>
-                      The front-end design was inspired by a <a rel="noopener noreferrer"
-                        href="https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign">
-                        project</a> from <strong><i><a rel="noopener noreferrer" href="https://www.behance.net/muratk"
-                            target='_blank'>Murat Korkmaz</a></i></strong>,
-                      whose project is licenced under <i>The Creative Commons</i> license.<br><br>
-                      <a href="https://youtu.be/A_j1AwwM6Ao" target="_blank" rel="noopener noreferrer">
-                        🎥 Watch a <strong>video presentation</strong> of this project here.</a>
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <ul class="d-flex flex-wrap">
-                      <li class="project-tag ms-0">ruby on rails</li>
-                      <li class="project-tag ms-0">react</li>
-                      <li class="project-tag">redux</li>
-                      <li class="project-tag">styled components</li>
-                      <li class="project-tag">sass</li>
-                      <li class="project-tag">html</li>
-                      <li class="project-tag">css</li>
-                      <li class="project-tag">javascript</li>
-                      <li class="project-tag">session cookies</li>
-                      <li class="project-tag">github workflow</li>
-                      <li class="project-tag">private routes</li>
-                      <li class="project-tag">react router dom</li>
-                      <li class="project-tag">cloudinary</li>
-                      <li class="project-tag">redux toolkit</li>
-                      <li class="project-tag">kanban board</li>
-                      <li class="project-tag">heroku</li>
-                      <li class="project-tag">netlify</li>
-                      <li class="project-tag">npm</li>
-                      <li class="project-tag">react-bootstrap</li>
-                      <li class="project-tag">swiper</li>
-                      <li class="project-tag">rspec</li>
-                      <li class="project-tag">factory bot gem</li>
-                      <li class="project-tag">faker gem</li>
-                      <li class="project-tag">axios</li>
-                      <li class="project-tag">ESlint</li>
-                      <li class="project-tag">vs code</li>
-                    </ul>
-                    <hr class="mt-3 mb-4 w-100">
-                    <div class="modal-footer-buttons-wrapper w-100 d-flex mt-4">
-                      <button type="button" class="w-100 modal-button my-0 me-1 py-md-2"
-                        onclick="window.open('https://expert-class-frontend-v2.netlify.app')" value="See live">See
-                        live <i class="ps-2 fas fa-external-link-alt"></i></button>
-                      <button type="button" class="w-100 modal-button my-0 ms-1 py-md-2"
-                        onclick="window.open('https://github.com/StarSheriff2/expert-class')" value="See Source">See
-                        Source <i class="ps-2 fab fa-github"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-    </section>
-    <section class="project-section p-4 container-md" data-aos="fade-left" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-md me-md-3 d-md-grid align-content-center">
-          <div class="screenshot-div-frame screenshot-div-frame-6-bg-color mb-3 mb-md-0">
-            <div class="project-screenshot-div-container project-screenshot-6-background">
-            </div>
-          </div>
-        </div>
-        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2">
-          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
-            data-bs-target="#project6"></a>
-          <h3>GNI per Capita in the World</h3>
-          <ul class="d-flex flex-wrap mb-md-4">
-            <li><span class="caption caption-bold">App</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">Front End Dev</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">2021</span></li>
-          </ul>
-          <p class="project-section-para">This web app shows the GNI per capita indicator for all
-            countries in the world. It consumes the World Bank API. I built it with React and Redux.
-          </p>
-          <ul class="d-flex flex-wrap">
-            <li class="project-tag ms-0">react - redux</li>
-            <li class="project-tag">html - css - javascript</li>
-            <li class="project-tag">styled components</li>
-            <li class="project-tag">sass</li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#project6">See Project</button>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="project6" tabindex="-1" aria-labelledby="project6" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-md-0">
-              <h3 class="modal-title" id="gni-per-capita">GNI per Capita in the World</h3>
-              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <ul class="d-flex flex-wrap px-3 mb-md-2">
-              <li><span class="caption caption-bold">App</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">Front End Dev</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">2021</span></li>
+            <p class="project-section-para">
+              This app allows users to sign up for a class taught by experts and
+              gurus. The backend is a RoR RESTful API hosted in Railway.app with
+              a 96% of test coverage. The frontend is a React app hosted in
+              Netlify. I used Redux toolkit to handle the global state.
+            </p>
+            <ul class="d-flex flex-wrap">
+              <li class="project-tag ms-0">ruby on rails - postgreSQL</li>
+              <li class="project-tag">react - redux</li>
+              <li class="project-tag">html - css - javascript</li>
+              <li class="project-tag">docker - railway</li>
+              <li class="project-tag">styled components</li>
             </ul>
-            <div class="modal-body">
-              <div class="screenshot-div-frame screenshot-div-frame-6-bg-color">
-                <div class="project-screenshot-div-container project-screenshot-6-background">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer pt-0 pb-3">
-              <div class="container-fluid-md w-100">
-                <div class="row">
-                  <div class="modal-footer-project-description col-md-8">
-                    <p class="project-section-para mt-0">In this app, users can see the GNI per
-                      Capita Indicator (Atlas Method) of every country in the world.
-                      Data are classified according to the geographic location of the country
-                      or by its income level. There are two slices for the store, one for the
-                      homepage data and another for the detailed view of each country group.<br><br>
-
-                      The page consumes the World Bank API located <a rel="noopener noreferrer"
-                        href="http://api.worldbank.org/v2/datacatalog" target='_blank'>here</a>. Single
-                      <strong>API</strong> queries are made
-                      per page, and only if data doesn't exist in the Redux store.
-                      I used <strong>Redux's thunk</strong> middleware to handle all API calls.<br><br>
-
-                      For testing I used <strong>Jest</strong>, <strong>React's Testing Library</strong>, and
-                      <strong>MSW</strong>(for API mocking).<br><br>
-
-                      I built it with <strong>React</strong> and <strong>Redux</strong>. It was bootstrapped with <i>
-                        <a rel="noopener noreferrer" href="https://github.com/facebook/create-react-app"
-                          target='_blank'>create-react-app</a>
-                      </i>.<br><br>
-
-                      The design was inspired by a project from <strong><i><a rel="noopener noreferrer"
-                            href="https://www.behance.net/sakwadesignstudio" target='_blank'>Nelson
-                            Sakwa</a></i></strong>, whose project is licenced under <i>The Creative Commons</i> license.
-                    </p>
-                  </div>
-                  <div class="col-md-4">
-                    <ul class="d-flex flex-wrap">
-                      <li class="project-tag ms-0">react</li>
-                      <li class="project-tag">redux</li>
-                      <li class="project-tag">styled components</li>
-                      <li class="project-tag">sass</li>
-                      <li class="project-tag">msw</li>
-                      <li class="project-tag">react's testing library</li>
-                      <li class="project-tag">jest</li>
-                      <li class="project-tag">html</li>
-                      <li class="project-tag">css</li>
-                      <li class="project-tag">javascript</li>
-                      <li class="project-tag">netlify</li>
-                      <li class="project-tag">npm</li>
-                      <li class="project-tag">ESlint</li>
-                      <li class="project-tag">vs code</li>
-                    </ul>
-                    <hr class="mt-3 mb-4 w-100">
-                    <div class="modal-footer-buttons-wrapper w-100 d-flex mt-4">
-                      <button type="button" class="w-100 modal-button my-0 me-1 py-md-2"
-                        onclick="window.open('https://agitated-sinoussi-e23bf8.netlify.app/#/')" value="See live">See
-                        live <i class="ps-2 fas fa-external-link-alt"></i></button>
-                      <button type="button" class="w-100 modal-button my-0 ms-1 py-md-2"
-                        onclick="window.open('https://github.com/StarSheriff2/GNI-per-Capita-in-the-World')"
-                        value="See Source">See
-                        Source <i class="ps-2 fab fa-github"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#project7"
+            >
+              See Project
+            </button>
           </div>
         </div>
-      </div>
-      <!-- end -->
-    </section>
-    <section class="project-section p-4 container-md" data-aos="fade-right" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-md me-md-3 d-md-grid align-content-center">
-          <div class="screenshot-div-frame screenshot-div-frame-1-bg-color mb-3 mb-md-0">
-            <div class="project-screenshot-div-container project-screenshot-1-background">
-            </div>
-          </div>
-        </div>
-        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2">
-          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
-            data-bs-target="#project1"></a>
-          <h3>To-Do List app</h3>
-          <ul class="d-flex flex-wrap mb-md-4">
-            <li><span class="caption caption-bold">App</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">Front End Dev</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">2021</span></li>
-          </ul>
-          <p class="project-section-para">In this app users can add new tasks, edit them, move them around, and delete
-            them. It's a simple desktop app with a minimalist design approach built with Webpack and ES6 standards.
-          </p>
-          <ul class="d-flex flex-wrap">
-            <li class="project-tag ms-0">javascript</li>
-            <li class="project-tag">css</li>
-            <li class="project-tag">webpack</li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#project1">See Project</button>
-        </div>
-      </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="project1" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-md-0">
-              <h3 class="modal-title" id="to-do-list">To-Do List app</h3>
-              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <ul class="d-flex flex-wrap px-3 mb-md-2">
-              <li><span class="caption caption-bold">App</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">Front End Dev</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">2021</span></li>
-            </ul>
-            <div class="modal-body">
-              <div class="screenshot-div-frame screenshot-div-frame-1-bg-color">
-                <div class="project-screenshot-div-container project-screenshot-1-background">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="project7"
+          tabindex="-1"
+          aria-labelledby="project6"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header pb-md-0">
+                <h3 class="modal-title" id="expert-class">Expert Class</h3>
+                <button
+                  type="button"
+                  class="btn-close me-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <ul class="d-flex flex-wrap px-3 mb-md-2">
+                <li><span class="caption caption-bold">Booking App</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">Full-Stack Dev</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">2021</span></li>
+              </ul>
+              <div class="modal-body">
+                <div
+                  class="screenshot-div-frame screenshot-div-frame-7-bg-color"
+                >
+                  <div
+                    class="project-screenshot-div-container project-screenshot-7-background"
+                  ></div>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer pt-0 pb-3">
-              <div class="container-fluid-md w-100">
-                <div class="row">
-                  <div class="modal-footer-project-description col-md-8">
-                    <p class="project-section-para mt-0">Through this app, users can easily add new tasks to their daily
-                      to-do list. They can also edit their task descriptions, move the items around, or delete them.
-                      It's a simple desktop app with a minimalist design approach built with <strong>Webpack</strong>
-                      and
-                      ES6 standards.<br><br>
+              <div class="modal-footer pt-0 pb-3">
+                <div class="container-fluid-md w-100">
+                  <div class="row">
+                    <div class="modal-footer-project-description col-md-8">
+                      <p class="project-section-para mt-0">
+                        In this app, users can register an account to book
+                        classes with experts in different topics from all over
+                        the world. Users can create new classes, delete them and
+                        view them. They can also reserve a class or view all
+                        their current reservations. I built this project with a
+                        group of developers using Github's Kanban board.<br /><br />
 
-                      The to-Do list is an app built entirely with javascript, HTML, and CSS. I used webpack to compile
-                      the code and publish it on Github pages.
-                      The app stores the user data by using the <strong><i>local storage</i></strong> built into the
-                      browser.<br><br>
-
-                      Advanced JS techniques, such as <strong>module exports</strong> and drag and drop event listeners,
-                      were used in this project.<br><br>
-
-                      The app design has a minimalist approach, inspired by this project: <strong>
+                        We built the backend with
+                        <strong>Ruby on Rails</strong>,
+                        <strong>PostgreSQL</strong> for the database,
+                        <strong>ReactJS</strong> for the frontend, and
+                        <strong>Redux</strong> for the global state management.
+                        React was bootstrapped with
                         <i>
-                          <a rel="noopener noreferrer"
-                            href="https://web.archive.org/web/20180320194056/http://www.getminimalist.com:80/"
-                            target='_blank'>minimalist</a>
-                        </i>
-                      </strong>.
-                      It supports all
-                      the <strong>CRUD operations</strong>.</p>
-                    <p>Users can complete any of the following tasks:</p>
-                    <ul class="ms-3 mb-3 mb-md-0">
-                      <li>Add a new task</li>
-                      <li>Edit a task</li>
-                      <li>Delete a new task</li>
-                      <li>Mark any task as completed</li>
-                      <li>Delete all completed tasks</li>
-                      <li>Change the order of priority of any task through drag and drop</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul class="d-flex flex-wrap">
-                      <li class="project-tag ms-0">html</li>
-                      <li class="project-tag">css</li>
-                      <li class="project-tag">javascript</li>
-                      <li class="project-tag">webpack</li>
-                      <li class="project-tag">local storage</li>
-                      <li class="project-tag">module exports</li>
-                      <li class="project-tag">npm</li>
-                      <li class="project-tag">ESlint</li>
-                      <li class="project-tag">vs code</li>
-                    </ul>
-                    <hr class="mt-3 mb-4 w-100">
-                    <div class="modal-footer-buttons-wrapper w-100 d-flex mt-4">
-                      <button type="button" class="w-100 modal-button my-0 me-1 py-md-2"
-                        onclick="window.open('https://starsheriff2.github.io/To-Do-list-app/')" value="See live">See
-                        live <i class="ps-2 fas fa-external-link-alt"></i></button>
-                      <button type="button" class="w-100 modal-button my-0 ms-1 py-md-2"
-                        onclick="window.open('https://github.com/StarSheriff2/To-Do-list-app')" value="See Source">See
-                        Source <i class="ps-2 fab fa-github"></i></button>
+                          <a
+                            rel="noopener noreferrer"
+                            href="https://github.com/facebook/create-react-app"
+                            target="_blank"
+                            >create-react-app</a
+                          ></i
+                        >.<br /><br />
+                        The front-end design was inspired by a
+                        <a
+                          rel="noopener noreferrer"
+                          href="https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign"
+                        >
+                          project</a
+                        >
+                        from
+                        <strong
+                          ><i
+                            ><a
+                              rel="noopener noreferrer"
+                              href="https://www.behance.net/muratk"
+                              target="_blank"
+                              >Murat Korkmaz</a
+                            ></i
+                          ></strong
+                        >, whose project is licenced under
+                        <i>The Creative Commons</i> license.<br /><br />
+                        <a
+                          href="https://youtu.be/A_j1AwwM6Ao"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          🎥 Watch a <strong>video presentation</strong> of this
+                          project here.</a
+                        >
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="d-flex flex-wrap">
+                        <li class="project-tag ms-0">ruby on rails</li>
+                        <li class="project-tag ms-0">react</li>
+                        <li class="project-tag">redux</li>
+                        <li class="project-tag">docker</li>
+                        <li class="project-tag">styled components</li>
+                        <li class="project-tag">sass</li>
+                        <li class="project-tag">html</li>
+                        <li class="project-tag">css</li>
+                        <li class="project-tag">javascript</li>
+                        <li class="project-tag">session cookies</li>
+                        <li class="project-tag">github workflow</li>
+                        <li class="project-tag">private routes</li>
+                        <li class="project-tag">react router dom</li>
+                        <li class="project-tag">cloudinary</li>
+                        <li class="project-tag">redux toolkit</li>
+                        <li class="project-tag">kanban board</li>
+                        <li class="project-tag">railway.app</li>
+                        <li class="project-tag">netlify</li>
+                        <li class="project-tag">npm</li>
+                        <li class="project-tag">react-bootstrap</li>
+                        <li class="project-tag">swiper</li>
+                        <li class="project-tag">rspec</li>
+                        <li class="project-tag">factory bot gem</li>
+                        <li class="project-tag">faker gem</li>
+                        <li class="project-tag">axios</li>
+                        <li class="project-tag">ESlint</li>
+                        <li class="project-tag">vs code</li>
+                      </ul>
+                      <hr class="mt-3 mb-4 w-100" />
+                      <div
+                        class="modal-footer-buttons-wrapper w-100 d-flex mt-4"
+                      >
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 me-1 py-md-2"
+                          onclick="window.open('https://expert-class-frontend-v2.netlify.app')"
+                          value="See live"
+                        >
+                          See live <i class="ps-2 fas fa-external-link-alt"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 ms-1 py-md-2"
+                          onclick="window.open('https://github.com/StarSheriff2/expert-class')"
+                          value="See Source"
+                        >
+                          See Source <i class="ps-2 fab fa-github"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -452,209 +396,353 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- end -->
-    </section>
-    <section class="project-section p-4 container-md" data-aos="fade-left" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-md ms-md-3 order-md-2 d-md-grid align-content-center">
-          <div class="screenshot-div-frame screenshot-div-frame-2-bg-color mb-3 mb-md-0">
-            <div class="project-screenshot-div-container project-screenshot-2-background">
+        <!-- end -->
+      </section>
+      <section
+        class="project-section p-4 container-md"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <div class="row">
+          <div class="col-md me-md-3 d-md-grid align-content-center">
+            <div
+              class="screenshot-div-frame screenshot-div-frame-6-bg-color mb-3 mb-md-0"
+            >
+              <div
+                class="project-screenshot-div-container project-screenshot-6-background"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2"
+          >
+            <a
+              href="#"
+              class="project-md-stretched-link d-none d-md-block stretched-link"
+              data-bs-toggle="modal"
+              data-bs-target="#project6"
+            ></a>
+            <h3>GNI per Capita in the World</h3>
+            <ul class="d-flex flex-wrap mb-md-4">
+              <li><span class="caption caption-bold">App</span></li>
+              <li class="neutral-bullet-point mx-2">•</li>
+              <li><span class="caption">Front End Dev</span></li>
+              <li class="neutral-bullet-point mx-2">•</li>
+              <li><span class="caption">2021</span></li>
+            </ul>
+            <p class="project-section-para">
+              This web app shows the GNI per capita indicator for all countries
+              in the world. It consumes the World Bank API. I built it with
+              React and Redux.
+            </p>
+            <ul class="d-flex flex-wrap">
+              <li class="project-tag ms-0">react - redux</li>
+              <li class="project-tag">html - css - javascript</li>
+              <li class="project-tag">styled components</li>
+              <li class="project-tag">sass</li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#project6"
+            >
+              See Project
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="project6"
+          tabindex="-1"
+          aria-labelledby="project6"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header pb-md-0">
+                <h3 class="modal-title" id="gni-per-capita">
+                  GNI per Capita in the World
+                </h3>
+                <button
+                  type="button"
+                  class="btn-close me-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <ul class="d-flex flex-wrap px-3 mb-md-2">
+                <li><span class="caption caption-bold">App</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">Front End Dev</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">2021</span></li>
+              </ul>
+              <div class="modal-body">
+                <div
+                  class="screenshot-div-frame screenshot-div-frame-6-bg-color"
+                >
+                  <div
+                    class="project-screenshot-div-container project-screenshot-6-background"
+                  ></div>
+                </div>
+              </div>
+              <div class="modal-footer pt-0 pb-3">
+                <div class="container-fluid-md w-100">
+                  <div class="row">
+                    <div class="modal-footer-project-description col-md-8">
+                      <p class="project-section-para mt-0">
+                        In this app, users can see the GNI per Capita Indicator
+                        (Atlas Method) of every country in the world. Data are
+                        classified according to the geographic location of the
+                        country or by its income level. There are two slices for
+                        the store, one for the homepage data and another for the
+                        detailed view of each country group.<br /><br />
+
+                        The page consumes the World Bank API located
+                        <a
+                          rel="noopener noreferrer"
+                          href="http://api.worldbank.org/v2/datacatalog"
+                          target="_blank"
+                          >here</a
+                        >. Single <strong>API</strong> queries are made per
+                        page, and only if data doesn't exist in the Redux store.
+                        I used <strong>Redux's thunk</strong> middleware to
+                        handle all API calls.<br /><br />
+
+                        For testing I used <strong>Jest</strong>,
+                        <strong>React's Testing Library</strong>, and
+                        <strong>MSW</strong>(for API mocking).<br /><br />
+
+                        I built it with <strong>React</strong> and
+                        <strong>Redux</strong>. It was bootstrapped with
+                        <i>
+                          <a
+                            rel="noopener noreferrer"
+                            href="https://github.com/facebook/create-react-app"
+                            target="_blank"
+                            >create-react-app</a
+                          > </i
+                        >.<br /><br />
+
+                        The design was inspired by a project from
+                        <strong
+                          ><i
+                            ><a
+                              rel="noopener noreferrer"
+                              href="https://www.behance.net/sakwadesignstudio"
+                              target="_blank"
+                              >Nelson Sakwa</a
+                            ></i
+                          ></strong
+                        >, whose project is licenced under
+                        <i>The Creative Commons</i> license.
+                      </p>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="d-flex flex-wrap">
+                        <li class="project-tag ms-0">react</li>
+                        <li class="project-tag">redux</li>
+                        <li class="project-tag">styled components</li>
+                        <li class="project-tag">sass</li>
+                        <li class="project-tag">msw</li>
+                        <li class="project-tag">react's testing library</li>
+                        <li class="project-tag">jest</li>
+                        <li class="project-tag">html</li>
+                        <li class="project-tag">css</li>
+                        <li class="project-tag">javascript</li>
+                        <li class="project-tag">netlify</li>
+                        <li class="project-tag">npm</li>
+                        <li class="project-tag">ESlint</li>
+                        <li class="project-tag">vs code</li>
+                      </ul>
+                      <hr class="mt-3 mb-4 w-100" />
+                      <div
+                        class="modal-footer-buttons-wrapper w-100 d-flex mt-4"
+                      >
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 me-1 py-md-2"
+                          onclick="window.open('https://agitated-sinoussi-e23bf8.netlify.app/#/')"
+                          value="See live"
+                        >
+                          See live <i class="ps-2 fas fa-external-link-alt"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 ms-1 py-md-2"
+                          onclick="window.open('https://github.com/StarSheriff2/GNI-per-Capita-in-the-World')"
+                          value="See Source"
+                        >
+                          See Source <i class="ps-2 fab fa-github"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2">
-          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
-            data-bs-target="#project2"></a>
-          <h3>Recipe Buddies</h3>
-          <ul class="d-flex flex-wrap mb-md-4">
-            <li><span class="caption caption-bold">Social Platform</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">Full-Stack Dev</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">2021</span></li>
-          </ul>
-          <p class="project-section-para">Recipe Buddies is a Rails social media platform for cooking enthusiasts, where
-            people can sign up and share their favorite recipes with others.
-          </p>
-          <ul class="d-flex flex-wrap">
-            <li class="project-tag ms-0">ruby on rails</li>
-            <li class="project-tag">heroku</li>
-            <li class="project-tag">bootstrap</li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#project2">See Project</button>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="project2" tabindex="-1" aria-labelledby="project2" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-md-0">
-              <h3 class="modal-title" id="recipe-buddies">Recipe Buddies</h3>
-              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- end -->
+      </section>
+      <section
+        class="project-section p-4 container-md"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <div class="row">
+          <div class="col-md ms-md-3 order-md-2 d-md-grid align-content-center">
+            <div
+              class="screenshot-div-frame screenshot-div-frame-2-bg-color mb-3 mb-md-0"
+            >
+              <div
+                class="project-screenshot-div-container project-screenshot-2-background"
+              ></div>
             </div>
-            <ul class="d-flex flex-wrap px-3 mb-md-2">
+          </div>
+          <div
+            class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2"
+          >
+            <a
+              href="#"
+              class="project-md-stretched-link d-none d-md-block stretched-link"
+              data-bs-toggle="modal"
+              data-bs-target="#project2"
+            ></a>
+            <h3>Recipe Buddies</h3>
+            <ul class="d-flex flex-wrap mb-md-4">
               <li><span class="caption caption-bold">Social Platform</span></li>
               <li class="neutral-bullet-point mx-2">•</li>
               <li><span class="caption">Full-Stack Dev</span></li>
               <li class="neutral-bullet-point mx-2">•</li>
               <li><span class="caption">2021</span></li>
             </ul>
-            <div class="modal-body">
-              <div class="screenshot-div-frame screenshot-div-frame-2-bg-color">
-                <div class="project-screenshot-div-container project-screenshot-2-background">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer pt-0 pb-3">
-              <div class="container-fluid-md w-100">
-                <div class="row">
-                  <div class="modal-footer-project-description col-md-8">
-                    <p class="project-section-para mt-0">Recipe Buddies is a social media platform built from scratch
-                      using Ruby on Rails, Bootstrap, CSS, SCSS, PostgreSQL, and Cloudinary for image cloud storage.
-                      On this platform, users can signup and start sharing opinions on their favorite cooking recipes.
-                      Users can follow or unfollow other users (just like Twitter) and vote or unvote for recipe
-                      opinions from other users (including their own).</p>
-                    <p>Features:</p>
-                    <ul class="ms-3 mb-3 mb-md-0">
-                      <li>Sign up with a unique username and a full name</li>
-                      <li>Upload a profile picture and a cover picture</li>
-                      <li>Follow and unfollow other users</li>
-                      <li>Share an opinion on a recipe</li>
-                      <li>Vote for other opinions</li>
-                      <li>Vote only once per opinion</li>
-                      <li>See their followers and followed users</li>
-                      <li>See the number of opinions created since their last logout</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul class="d-flex flex-wrap">
-                      <li class="project-tag ms-0">ruby on rails</li>
-                      <li class="project-tag">heroku</li>
-                      <li class="project-tag">bootstrap</li>
-                      <li class="project-tag">postgresql</li>
-                      <li class="project-tag">fontawesome</li>
-                      <li class="project-tag">bootstrap</li>
-                      <li class="project-tag">capybara</li>
-                      <li class="project-tag">flexbox</li>
-                      <li class="project-tag">cloudinary</li>
-                      <li class="project-tag">form helpers</li>
-                      <li class="project-tag">rails helpers</li>
-                      <li class="project-tag">vs code</li>
-                    </ul>
-                    <hr class="mt-3 mb-4 w-100">
-                    <div class="modal-footer-buttons-wrapper w-100 d-flex mt-4">
-                      <button type="button" class="w-100 modal-button my-0 me-1 py-md-2"
-                        onclick="window.open('https://gentle-cliffs-69056.herokuapp.com/')" value="See live">See
-                        live <i class="ps-2 fas fa-external-link-alt"></i></button>
-                      <button type="button" class="w-100 modal-button my-0 ms-1 py-md-2"
-                        onclick="window.open('https://github.com/StarSheriff2/receipe-buddies')" value="See Source">See
-                        Source <i class="ps-2 fab fa-github"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-
-    </section>
-    <section class="project-section p-4 container-md" data-aos="fade-right" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-md me-md-3 d-md-grid align-content-center">
-          <div class="screenshot-div-frame screenshot-div-frame-3-bg-color mb-3 mb-md-0">
-            <div class="project-screenshot-div-container project-screenshot-3-background">
-            </div>
-          </div>
-        </div>
-        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2">
-          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
-            data-bs-target="#project3"></a>
-          <h3>Stay in Touch</h3>
-          <ul class="d-flex flex-wrap mb-md-4">
-            <li><span class="caption caption-bold">Social Network</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">Full-Stack Dev</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">2021</span></li>
-          </ul>
-          <p class="project-section-para">Stay-in-Touch is a simple social media app (think Facebook) where users can
-            befriend other users.
-          </p>
-          <ul class="d-flex flex-wrap">
-            <li class="project-tag ms-0">ruby on rails</li>
-            <li class="project-tag">o-auth</li>
-            <li class="project-tag">postgresql</li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#project3">See Project</button>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="project3" tabindex="-1" aria-labelledby="project3" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-md-0">
-              <h3 class="modal-title" id="stay-in-touch">Stay in Touch</h3>
-              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <ul class="d-flex flex-wrap px-3 mb-md-2">
-              <li><span class="caption caption-bold">Social Network</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">Full-Stack Dev</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">2021</span></li>
+            <p class="project-section-para">
+              Recipe Buddies is a Rails social media platform for cooking
+              enthusiasts, where people can sign up and share their favorite
+              recipes with others.
+            </p>
+            <ul class="d-flex flex-wrap">
+              <li class="project-tag ms-0">ruby on rails</li>
+              <li class="project-tag">heroku</li>
+              <li class="project-tag">bootstrap</li>
             </ul>
-            <div class="modal-body">
-              <div class="screenshot-div-frame screenshot-div-frame-3-bg-color">
-                <div class="project-screenshot-div-container project-screenshot-3-background">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#project2"
+            >
+              See Project
+            </button>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="project2"
+          tabindex="-1"
+          aria-labelledby="project2"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header pb-md-0">
+                <h3 class="modal-title" id="recipe-buddies">Recipe Buddies</h3>
+                <button
+                  type="button"
+                  class="btn-close me-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <ul class="d-flex flex-wrap px-3 mb-md-2">
+                <li>
+                  <span class="caption caption-bold">Social Platform</span>
+                </li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">Full-Stack Dev</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">2021</span></li>
+              </ul>
+              <div class="modal-body">
+                <div
+                  class="screenshot-div-frame screenshot-div-frame-2-bg-color"
+                >
+                  <div
+                    class="project-screenshot-div-container project-screenshot-2-background"
+                  ></div>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer pt-0 pb-3">
-              <div class="container-fluid-md w-100">
-                <div class="row">
-                  <div class="modal-footer-project-description col-md-8">
-                    <p class="project-section-para mt-0">Stay-in-Touch is a social media app where you can add other
-                      users as friends, create posts, comment on your friends' posts, and like another post. The main
-                      objective of this project was to build advanced associations, scopes for faster queries, and model
-                      methods through Rails' Application Record.
-                    </p>
-                    <p>What you can do on the app:</p>
-                    <ul class="ms-3 mb-3 mb-md-0">
-                      <li>Sign up and Log in</li>
-                      <li>Add other users as friends</li>
-                      <li>Accept or rejects friend requests</li>
-                      <li>See the status of your relationship with other users</li>
-                      <li>Create posts and see posts from your friends</li>
-                      <li>Users can comment and like on their friends' posts</li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4">
-                    <ul class="d-flex flex-wrap">
-                      <li class="project-tag ms-0">ruby on rails</li>
-                      <li class="project-tag">o-auth</li>
-                      <li class="project-tag">postgresql</li>
-                      <li class="project-tag">google api</li>
-                      <li class="project-tag">capybara</li>
-                      <li class="project-tag">devise gem</li>
-                      <li class="project-tag">user authentication</li>
-                      <li class="project-tag">sql</li>
-                      <li class="project-tag">rubocop</li>
-                    </ul>
-                    <hr class="mt-3 mb-4 w-100">
-                    <div class="modal-footer-buttons-wrapper w-100 d-flex mt-4">
-                      <button type="button" class="w-100 modal-button my-0 me-1 py-md-2"
-                        onclick="window.open('https://fast-wildwood-38105.herokuapp.com/')" value="See live">See
-                        live <i class="ps-2 fas fa-external-link-alt"></i></button>
-                      <button type="button" class="w-100 modal-button my-0 ms-1 py-md-2"
-                        onclick="window.open('https://github.com/alexisbec/ror-social-scaffold')" value="See Source">See
-                        Source <i class="ps-2 fab fa-github"></i></button>
+              <div class="modal-footer pt-0 pb-3">
+                <div class="container-fluid-md w-100">
+                  <div class="row">
+                    <div class="modal-footer-project-description col-md-8">
+                      <p class="project-section-para mt-0">
+                        Recipe Buddies is a social media platform built from
+                        scratch using Ruby on Rails, Bootstrap, CSS, SCSS,
+                        PostgreSQL, and Cloudinary for image cloud storage. On
+                        this platform, users can signup and start sharing
+                        opinions on their favorite cooking recipes. Users can
+                        follow or unfollow other users (just like Twitter) and
+                        vote or unvote for recipe opinions from other users
+                        (including their own).
+                      </p>
+                      <p>Features:</p>
+                      <ul class="ms-3 mb-3 mb-md-0">
+                        <li>Sign up with a unique username and a full name</li>
+                        <li>Upload a profile picture and a cover picture</li>
+                        <li>Follow and unfollow other users</li>
+                        <li>Share an opinion on a recipe</li>
+                        <li>Vote for other opinions</li>
+                        <li>Vote only once per opinion</li>
+                        <li>See their followers and followed users</li>
+                        <li>
+                          See the number of opinions created since their last
+                          logout
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="d-flex flex-wrap">
+                        <li class="project-tag ms-0">ruby on rails</li>
+                        <li class="project-tag">heroku</li>
+                        <li class="project-tag">bootstrap</li>
+                        <li class="project-tag">postgresql</li>
+                        <li class="project-tag">fontawesome</li>
+                        <li class="project-tag">bootstrap</li>
+                        <li class="project-tag">capybara</li>
+                        <li class="project-tag">flexbox</li>
+                        <li class="project-tag">cloudinary</li>
+                        <li class="project-tag">form helpers</li>
+                        <li class="project-tag">rails helpers</li>
+                        <li class="project-tag">vs code</li>
+                      </ul>
+                      <hr class="mt-3 mb-4 w-100" />
+                      <div
+                        class="modal-footer-buttons-wrapper w-100 d-flex mt-4"
+                      >
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 me-1 py-md-2"
+                          onclick="window.open('https://gentle-cliffs-69056.herokuapp.com/')"
+                          value="See live"
+                        >
+                          See live <i class="ps-2 fas fa-external-link-alt"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 ms-1 py-md-2"
+                          onclick="window.open('https://github.com/StarSheriff2/receipe-buddies')"
+                          value="See Source"
+                        >
+                          See Source <i class="ps-2 fab fa-github"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -662,320 +750,646 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- end -->
-
-    </section>
-    <section class="project-section p-4 container-md" data-aos="fade-left" data-aos-duration="1000">
-      <div class="row">
-        <div class="col-md me-md-3 d-md-grid align-content-center">
-          <div class="screenshot-div-frame screenshot-div-frame-5-bg-color mb-3 mb-md-0">
-            <div class="project-screenshot-div-container project-screenshot-5-background">
-            </div>
-          </div>
-        </div>
-        <div class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2">
-          <a href="#" class="project-md-stretched-link d-none d-md-block stretched-link" data-bs-toggle="modal"
-            data-bs-target="#project5"></a>
-          <h3>MD Cleaner</h3>
-          <ul class="d-flex flex-wrap mb-md-4">
-            <li><span class="caption caption-bold">Linter Program</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">Markdown Linter</span></li>
-            <li class="neutral-bullet-point mx-2">•</li>
-            <li><span class="caption">2020</span></li>
-          </ul>
-          <p class="project-section-para">MD Cleaner is a
-            program that checks your markdown files to find any errors in style, so your MD files are more polished and
-            professional. Especially useful for Ruby README files!
-          </p>
-          <ul class="d-flex flex-wrap">
-            <li class="project-tag ms-0">ruby</li>
-            <li class="project-tag">rspec</li>
-            <li class="project-tag">strscan</li>
-          </ul>
-          <!-- Button trigger modal -->
-          <button type="button" data-bs-toggle="modal" data-bs-target="#project5">See Project</button>
-        </div>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="project5" tabindex="-1" aria-labelledby="project5" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header pb-md-0">
-              <h3 class="modal-title" id="md-cleaner">MD Cleaner</h3>
-              <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <ul class="d-flex flex-wrap px-3 mb-md-2">
-              <li><span class="caption caption-bold">Linter Program</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">Markdown Linter</span></li>
-              <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">2020</span></li>
-            </ul>
-            <div class="modal-body">
-              <div class="screenshot-div-frame screenshot-div-frame-5-bg-color">
-                <div class="project-screenshot-div-container project-screenshot-5-background">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer pt-0 pb-3">
-              <div class="container-fluid-md w-100">
-                <div class="row">
-                  <div class="modal-footer-project-description col-md-8">
-                    <p class="project-section-para mt-0">MD Cleaner was my Ruby Capstone project for Microverse's Ruby
-                      course. In this project, I built a linter for markdown files. I made
-                      this tool with README.md files in mind that typically go inside Github repositories. It currently
-                      detects three types of errors:
-                    </p>
-                    <ul class="ms-3">
-                      <li>Heading errors</li>
-                      <li>Paragraph indent errors</li>
-                      <li>Italics in the middle of a word</li>
-                    </ul>
-                    <p class="mt-3">After you run the program, it will return a list with all errors in your MD file,
-                      with the
-                      following information:</p>
-                    <ul class="ms-3">
-                      <li>Code line</li>
-                      <li>Character position</li>
-                      <li>Copy of code where an error was detected</li>
-                      <li>A brief description of the error and correction steps to fix it</li>
-                    </ul>
-                    <p class="mt-3">Once you fix an error, the program won't show this error again. Fix all issues until
-                      there are no more error messages. If you do, a message will appear stating there are no more
-                      errors.</p>
-                  </div>
-                  <div class="col-md-4">
-                    <ul class="d-flex flex-wrap">
-                      <li class="project-tag ms-0">ruby</li>
-                      <li class="project-tag">rspec</li>
-                      <li class="project-tag">strscan</li>
-                      <li class="project-tag">repl</li>
-                      <li class="project-tag">linter</li>
-                      <li class="project-tag">string scanner</li>
-                      <li class="project-tag">oop</li>
-                      <li class="project-tag">gitflow</li>
-                      <li class="project-tag">rubocop</li>
-                    </ul>
-                    <hr class="mt-3 mb-4 w-100">
-                    <div class="modal-footer-buttons-wrapper w-100 d-flex mt-4">
-                      <button type="button" class="w-100 modal-button my-0 me-1 py-md-2"
-                        onclick="window.open('https://replit.com/@StarSheriff2/MD-Cleanerdemo')" value="See live">See
-                        live <i class="ps-2 fas fa-external-link-alt"></i></button>
-                      <button type="button" class="w-100 modal-button my-0 ms-1 py-md-2"
-                        onclick="window.open('https://github.com/StarSheriff2/MD-Cleaner')" value="See Source">See
-                        Source <i class="ps-2 fab fa-github"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end -->
-    </section>
-  </main>
-  <footer class="footer" data-aos="fade-down" data-aos-duration="1000">
-    <section class="about-myself p-4">
-      <div class="container-fluid-md">
+        <!-- end -->
+      </section>
+      <section
+        class="project-section p-4 container-md"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+      >
         <div class="row">
-          <div class="col-md-5">
-            <h2 id="about">About Myself</h2>
-            <p>I'm Arturo Alvarez - a full-stack software developer currently based in Honduras. When I'm not coding or learning something new, I enjoy exercising, eating out, salsa dancing, Netflix
-              binging, or annoying my cat with incessant hugs!</p>
-            <h5>Let's Connect</h5>
-            <ul class="social-media-links d-flex">
-              <li class="me-3"><a rel="noopener noreferrer" target="_blank" href="https://github.com/StarSheriff2"><i
-                    class="fab fa-github"></i></a></li>
-              <li class="me-3"><a rel="noopener noreferrer" target="_blank"
-                  href="https://www.linkedin.com/in/arturoalvarezv/"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li class="me-3"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/ArturoAlvarezV"><i
-                    class="fab fa-twitter"></i></a></li>
-            </ul>
-            <button type="button" class="mb-5"
-              onclick="window.open('https://docs.google.com/document/d/1ngT5rHlKAaJ3xV6hqequJpfLwL1744qdqfdKwsAmpz0/edit?usp=sharing')"
-              value="Get my resume">Get my resume</button>
+          <div class="col-md me-md-3 d-md-grid align-content-center">
+            <div
+              class="screenshot-div-frame screenshot-div-frame-4-bg-color mb-3 mb-md-0"
+            >
+              <div
+                class="project-screenshot-div-container project-screenshot-4-background"
+              ></div>
+            </div>
           </div>
-          <div class="col-md-7 about-myself-details-wrapper">
-            <details class="pt-2 mx-2">
-              <summary class="d-flex justify-content-between pe-4">
-                <h4>Languages</h4>
-              </summary>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img
-                  src="./assets/images/ruby-logo.png" alt="language-logo"
-                  class="language-logo me-3 circular-border"><span>Ruby</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img
-                  src="./assets/images/js-logo.png" alt="language-logo"
-                  class="language-logo me-3 circular-border"><span>Javascript</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/html5-logo.png" alt="language-logo" class="language-logo me-3"><span>HTML</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/css3-logo.png" alt="language-logo" class="language-logo me-3"><span>CSS</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/sql_logo.png" alt="language-logo" class="language-logo me-3"><span>SQL</span>
-              </div>
-            </details>
-            <hr>
-            <details class="pt-2 mx-2">
-              <summary class="d-flex justify-content-between pe-4">
-                <h4>Frameworks and Libraries</h4>
-              </summary>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img
-                  src="./assets/images/ruby-on-rails-logo.png" alt="language-logo" class="language-logo me-3"><span>Ruby
-                  on
-                  Rails</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/react-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>ReactJS</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/redux-logo.png" alt="language-logo" class="language-logo me-3"><span>Redux</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/postgres-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>PostgreSQL</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/bootstrap-logo.png" alt="language-logo"
-                  class="language-logo circular-border me-3"><span>Bootstrap</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/jest-logo.png" alt="language-logo" class="language-logo me-3"><span>Jest</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/rspec-logo.png" alt="language-logo" class="language-logo me-3"><span>RSpec</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/msw-logo.png" alt="language-logo" class="language-logo me-3"><span>MSW (API
-                  mocking)</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/react-testing-library-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>React Testing Library</span>
-              </div>
-            </details>
-            <hr>
-            <details class="pt-2 mx-2">
-              <summary class="d-flex justify-content-between pe-4">
-                <h4>Tools</h4>
-              </summary>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><img
-                  src="./assets/images/git-logo.png" alt="language-logo" class="language-logo me-3"><span>Git Version
-                  Control</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/github-logo.png" alt="language-logo"
-                  class="language-logo circular-border me-3"><span>Github</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/sass-logo.png" alt="language-logo" class="language-logo me-3"><span>SCSS</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/webpack-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>WebPack</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/npm-logo.png" alt="language-logo" class="language-logo me-3"><span>NPM</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/yarn-logo.png" alt="language-logo" class="language-logo me-3"><span>Yarn</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/heroku-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>Heroku</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/axios-logo.png" alt="language-logo" class="language-logo me-3"><span>Axios</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/jwt-logo.svg" alt="language-logo" class="language-logo me-3"><span>JWT
-                  Token</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/netlify-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>Netlify</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><img
-                  src="./assets/images/cloudinary-logo.png" alt="language-logo"
-                  class="language-logo me-3"><span>Cloudinary</span>
-              </div>
-            </details>
-            <hr>
-            <details class="pt-2 mx-2">
-              <summary class="d-flex justify-content-between pe-4">
-                <h4>Skills</h4>
-              </summary>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"><span>Pair
-                  Programming</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><span>Teamwork</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><span>Teaching</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><span>Coaching</span></div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><span>Remote Working</span>
-              </div>
-              <div class="details-content-container d-flex align-items-center p-3 mb-3"><span>Debugging</span></div>
-            </details>
-            <hr>
+          <div
+            class="project-info-wrapper col-md d-md-flex flex-column align-items-start mt-md-2"
+          >
+            <a
+              href="#"
+              class="project-md-stretched-link d-none d-md-block stretched-link"
+              data-bs-toggle="modal"
+              data-bs-target="#project4"
+            ></a>
+            <h3>Music Candy</h3>
+            <ul class="d-flex flex-wrap mb-md-4">
+              <li><span class="caption caption-bold">App</span></li>
+              <li class="neutral-bullet-point mx-2">•</li>
+              <li><span class="caption">Front End Dev</span></li>
+              <li class="neutral-bullet-point mx-2">•</li>
+              <li><span class="caption">2022</span></li>
+            </ul>
+            <p class="project-section-para">
+              Music Candy is a fully responsive web app powered by
+              <i>
+                <a
+                  href="https://www.discogs.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Discogs</a
+                >
+              </i>
+              that I built with <strong>create-react-app</strong> and
+              <strong>redux toolkit</strong> which allows you to find
+              information about audio recordings from your favorite artists in
+              all formats.
+            </p>
+            <ul class="d-flex flex-wrap">
+              <li class="project-tag ms-0">react</li>
+              <li class="project-tag">react-bootstrap</li>
+              <li class="project-tag">redux tookit</li>
+            </ul>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#project4"
+            >
+              See Project
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="contact-me p-4">
-      <div class="background-icons-wrapper overflow-hidden">
-        <img src="./assets/images/icons8-cat-64-drk-bg.png" alt="cat icon" class="header-bg-icons cat-icon">
-        <img src="./assets/images/icons8-cat-64-drk-bg.png" alt="cat icon" class="header-bg-icons cat-icon-2">
-        <img src="./assets/images/icons8-wavy-line-64-drk-bg.png" alt="wavy line"
-          class="header-bg-icons wavy-line-icon-drk-bg-1">
-        <img src="./assets/images/icons8-wavy-line-64-drk-bg.png" alt="wavy line"
-          class="header-bg-icons wavy-line-icon-drk-bg-2">
-        <img src="./assets/images/icons8-wavy-line-96-drk-bg.png" alt="wavy line"
-          class="header-bg-icons wavy-line-icon-drk-bg-3">
-      </div>
-      <div class="contact-me-content-wrapper">
-        <h2 class="text-center" id="contact">Contact me</h2>
-        <p class="contact-me-para text-center mb-5 mb-md-4">If you have a web app you are interested in developing, a
-          new feature you would like to implement, or a project that needs coding, I would love to help you make it a
-          reality.</p>
-        <form action="https://formsubmit.co/6de9cd9d41e328f7452519b3037b2aff" method="POST">
-          <input type="hidden" name="_subject" value="New message from Portfolio! woo!">
-          <div class="pb-3">
-            <input type="text" class="w-100 px-3 py-2" id="text" placeholder="your name" name="name" required>
-          </div>
-          <div class="pb-3">
-            <input type="email" class="w-100 px-3 py-2" id="email" placeholder="email" name="email" required>
-            <input type="hidden" name="_next" value="https://starsheriff2.github.io/Portfolio/pages/thank_you.html">
-          </div>
-          <div>
-            <textarea class="w-100 px-3 py-2" id="message" rows="5" placeholder="write your message here" name="message"
-              required></textarea>
-          </div>
-          <button type="submit" class="white-button d-md-block mb-2 mx-md-auto">Get in Touch</button>
-        </form>
-      </div>
-    </section>
-    <div class="attributions">
-      <p class="m-0">
-        Icons:
-        <a class="attributions-link" rel="noopener noreferrer" target="_blank"
-          href="https://icons8.com/icon/57371/cat">Cat</a> and <a class="attributions-link" rel="noopener noreferrer"
-          target="_blank" href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line">Wavy Line</a>
-        icons by <a class="attributions-link" rel="noopener noreferrer" target="_blank"
-          href="https://icons8.com">Icons8</a>
-      </p>
-    </div>
-  </footer>
 
-  <script src="js/my_portfolio.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
-  <script src="https://kit.fontawesome.com/2bdc450678.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="project4"
+          tabindex="-1"
+          aria-labelledby="project1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header pb-md-0">
+                <h3 class="modal-title" id="to-do-list">Music Candy</h3>
+                <button
+                  type="button"
+                  class="btn-close me-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <ul class="d-flex flex-wrap px-3 mb-md-2">
+                <li><span class="caption caption-bold">App</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">Front End Dev</span></li>
+                <li class="neutral-bullet-point mx-2">•</li>
+                <li><span class="caption">2022</span></li>
+              </ul>
+              <div class="modal-body">
+                <div
+                  class="screenshot-div-frame screenshot-div-frame-1-bg-color"
+                >
+                  <div
+                    class="project-screenshot-div-container project-screenshot-4-background"
+                  ></div>
+                </div>
+              </div>
+              <div class="modal-footer pt-0 pb-3">
+                <div class="container-fluid-md w-100">
+                  <div class="row">
+                    <div class="modal-footer-project-description col-md-8">
+                      <p class="project-section-para mt-0">
+                        Through this app, users can easily add album releases to
+                        their private collection. They can also edit their task
+                        descriptions, move the items around, or delete them.
+                        It's a mobile web app built with
+                        <strong>react</strong> and
+                        <strong>react bootstrap</strong>.<br /><br />
 
+                        I used some custom-made hooks to handle search queries
+                        and pagination. The global state of the app is handled
+                        with <strong><i>Redux toolkit</i></strong
+                        >.<br /><br />
+
+                        Advanced React hooks, such as
+                        <strong>useRef and useContext</strong>, were used in
+                        this project.
+                      </p>
+                      <p>Users can complete any of the following tasks:</p>
+                      <ul class="ms-3 mb-3 mb-md-0">
+                        <li>Search for releases by Artist, Album or both</li>
+                        <li>See Artist page</li>
+                        <li>Browse through all artist releases</li>
+                        <li>
+                          Add artist releases to own collection from different
+                          parts of the app
+                        </li>
+                        <li>See own collection in search page</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="d-flex flex-wrap">
+                        <li class="project-tag ms-0">html</li>
+                        <li class="project-tag">react-bootstrap</li>
+                        <li class="project-tag">javascript</li>
+                        <li class="project-tag">redux toolkit</li>
+                        <li class="project-tag">pagination</li>
+                        <li class="project-tag">OAuth 1.0</li>
+                        <li class="project-tag">react router dom</li>
+                        <li class="project-tag">font awesome</li>
+                        <li class="project-tag">netlify</li>
+                        <li class="project-tag">vs code</li>
+                      </ul>
+                      <hr class="mt-3 mb-4 w-100" />
+                      <div
+                        class="modal-footer-buttons-wrapper w-100 d-flex mt-4"
+                      >
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 me-1 py-md-2"
+                          onclick="window.open('https://music-candy.netlify.app/')"
+                          value="See live"
+                        >
+                          See live <i class="ps-2 fas fa-external-link-alt"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="w-100 modal-button my-0 ms-1 py-md-2"
+                          onclick="window.open('https://github.com/StarSheriff2/music-candy')"
+                          value="See Source"
+                        >
+                          See Source <i class="ps-2 fab fa-github"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+      </section>
+    </main>
+    <footer class="footer" data-aos="fade-down" data-aos-duration="1000">
+      <section class="about-myself p-4">
+        <div class="container-fluid-md">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 id="about">About Myself</h2>
+              <p>
+                I'm Arturo Alvarez - a full-stack software developer currently
+                based in Honduras. When I'm not coding or learning something
+                new, I enjoy exercising, eating out, salsa dancing, Netflix
+                binging, or annoying my cat with incessant hugs!
+              </p>
+              <h5>Let's Connect</h5>
+              <ul class="social-media-links d-flex">
+                <li class="me-3">
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/StarSheriff2"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li class="me-3">
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/arturoalvarezv/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="me-3">
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://twitter.com/ArturoAlvarezV"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="mb-5"
+                onclick="window.open('https://docs.google.com/document/d/1ngT5rHlKAaJ3xV6hqequJpfLwL1744qdqfdKwsAmpz0/edit?usp=sharing')"
+                value="Get my resume"
+              >
+                Get my resume
+              </button>
+            </div>
+            <div class="col-md-7 about-myself-details-wrapper">
+              <details class="pt-2 mx-2">
+                <summary class="d-flex justify-content-between pe-4">
+                  <h4>Languages</h4>
+                </summary>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <img
+                    src="./assets/images/ruby-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3 circular-border"
+                  /><span>Ruby</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <img
+                    src="./assets/images/js-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3 circular-border"
+                  /><span>Javascript</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/html5-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>HTML</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/css3-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>CSS</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/sql_logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>SQL</span>
+                </div>
+              </details>
+              <hr />
+              <details class="pt-2 mx-2">
+                <summary class="d-flex justify-content-between pe-4">
+                  <h4>Frameworks and Libraries</h4>
+                </summary>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <img
+                    src="./assets/images/ruby-on-rails-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Ruby on Rails</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/react-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>ReactJS</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/redux-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Redux</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/postgres-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>PostgreSQL</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/bootstrap-logo.png"
+                    alt="language-logo"
+                    class="language-logo circular-border me-3"
+                  /><span>Bootstrap</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/jest-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Jest</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/rspec-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>RSpec</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/msw-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>MSW (API mocking)</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/react-testing-library-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>React Testing Library</span>
+                </div>
+              </details>
+              <hr />
+              <details class="pt-2 mx-2">
+                <summary class="d-flex justify-content-between pe-4">
+                  <h4>Tools</h4>
+                </summary>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <img
+                    src="./assets/images/git-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Git Version Control</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/github-logo.png"
+                    alt="language-logo"
+                    class="language-logo circular-border me-3"
+                  /><span>Github</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/sass-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>SCSS</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/webpack-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>WebPack</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/npm-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>NPM</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/yarn-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Yarn</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/heroku-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Heroku</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/axios-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Axios</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/jwt-logo.svg"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>JWT Token</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/netlify-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Netlify</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="./assets/images/cloudinary-logo.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                  /><span>Cloudinary</span>
+                </div>
+              </details>
+              <hr />
+              <details class="pt-2 mx-2">
+                <summary class="d-flex justify-content-between pe-4">
+                  <h4>Skills</h4>
+                </summary>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <span>Pair Programming</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <span>Teamwork</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <span>Teaching</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <span>Coaching</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <span>Remote Working</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <span>Debugging</span>
+                </div>
+              </details>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-me p-4">
+        <div class="background-icons-wrapper overflow-hidden">
+          <img
+            src="./assets/images/icons8-cat-64-drk-bg.png"
+            alt="cat icon"
+            class="header-bg-icons cat-icon"
+          />
+          <img
+            src="./assets/images/icons8-cat-64-drk-bg.png"
+            alt="cat icon"
+            class="header-bg-icons cat-icon-2"
+          />
+          <img
+            src="./assets/images/icons8-wavy-line-64-drk-bg.png"
+            alt="wavy line"
+            class="header-bg-icons wavy-line-icon-drk-bg-1"
+          />
+          <img
+            src="./assets/images/icons8-wavy-line-64-drk-bg.png"
+            alt="wavy line"
+            class="header-bg-icons wavy-line-icon-drk-bg-2"
+          />
+          <img
+            src="./assets/images/icons8-wavy-line-96-drk-bg.png"
+            alt="wavy line"
+            class="header-bg-icons wavy-line-icon-drk-bg-3"
+          />
+        </div>
+        <div class="contact-me-content-wrapper">
+          <h2 class="text-center" id="contact">Contact me</h2>
+          <p class="contact-me-para text-center mb-5 mb-md-4">
+            If you have a web app you are interested in developing, a new
+            feature you would like to implement, or a project that needs coding,
+            I would love to help you make it a reality.
+          </p>
+          <form
+            action="https://formsubmit.co/6de9cd9d41e328f7452519b3037b2aff"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from Portfolio! woo!"
+            />
+            <div class="pb-3">
+              <input
+                type="text"
+                class="w-100 px-3 py-2"
+                id="text"
+                placeholder="your name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="pb-3">
+              <input
+                type="email"
+                class="w-100 px-3 py-2"
+                id="email"
+                placeholder="email"
+                name="email"
+                required
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://starsheriff2.github.io/Portfolio/pages/thank_you.html"
+              />
+            </div>
+            <div>
+              <textarea
+                class="w-100 px-3 py-2"
+                id="message"
+                rows="5"
+                placeholder="write your message here"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="white-button d-md-block mb-2 mx-md-auto"
+            >
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </section>
+      <div class="attributions">
+        <p class="m-0">
+          Icons:
+          <a
+            class="attributions-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://icons8.com/icon/57371/cat"
+            >Cat</a
+          >
+          and
+          <a
+            class="attributions-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://icons8.com/icon/ig_Dm8k0orQz/wavy-line"
+            >Wavy Line</a
+          >
+          icons by
+          <a
+            class="attributions-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://icons8.com"
+            >Icons8</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/my_portfolio.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/2bdc450678.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

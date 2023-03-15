@@ -497,23 +497,11 @@ details[open] > summary::before {
 }
 
 .project-screenshot-3-background {
-  background: transparent url(../images/Screenshot-SocialScaffold-Rails.png) center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Expert-Class.png) center/contain no-repeat;
 }
 
 .project-screenshot-4-background {
-  background: transparent url(../images/Screenshot-SalsaFestival2020-HTML-SCSS.png) center/contain no-repeat;
-}
-
-.project-screenshot-5-background {
-  background: transparent url(../images/Screenshot-MD-Cleaner-Ruby.png) center/contain no-repeat;
-}
-
-.project-screenshot-6-background {
-  background: url(../images/Screenshot-GNI-per-Capita-in-the-World.png) 20%/contain no-repeat, url(../images/Screenshot-GNI-per-Capita-in-the-World2.png) 80%/contain no-repeat;
-}
-
-.project-screenshot-7-background {
-  background: transparent url(../images/Screenshot-Expert-Class.png) center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Music-Candy.png) center/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {

@@ -121,7 +121,7 @@
 
 .nav-wrapper-scroll-class {
   background-color: $white;
-  box-shadow: 0 0.55rem 8px	rgb(235, 235, 255, 0.84);
+  box-shadow: 0 0.55rem 8px rgb(235, 235, 255, 0.84);
   transition: top 0.3s;
 }
 
@@ -211,31 +211,23 @@
 }
 
 .project-screenshot-1-background {
-  background: transparent url(../images/Screenshot-Todo-List-app.png) center center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Todo-List-app.png) center
+    center/contain no-repeat;
 }
 
 .project-screenshot-2-background {
-  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) center/contain no-repeat;
+  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png)
+    center/contain no-repeat;
 }
 
 .project-screenshot-3-background {
-  background: transparent url(../images/Screenshot-SocialScaffold-Rails.png) center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Expert-Class.png)
+    center/contain no-repeat;
 }
 
 .project-screenshot-4-background {
-  background: transparent url(../images/Screenshot-SalsaFestival2020-HTML-SCSS.png) center/contain no-repeat;
-}
-
-.project-screenshot-5-background {
-  background: transparent url(../images/Screenshot-MD-Cleaner-Ruby.png) center/contain no-repeat;
-}
-
-.project-screenshot-6-background {
-  background: url(../images/Screenshot-GNI-per-Capita-in-the-World.png) 20%/contain no-repeat, url(../images/Screenshot-GNI-per-Capita-in-the-World2.png) 80%/contain no-repeat;
-}
-
-.project-screenshot-7-background {
-  background: transparent url(../images/Screenshot-Expert-Class.png) center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Music-Candy.png)
+    center/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {
@@ -264,7 +256,11 @@
 }
 
 .details-content-container {
-  @include font-styles($weight: 500, $font-size: 0.94rem, $line-height: 1.25rem);
+  @include font-styles(
+    $weight: 500,
+    $font-size: 0.94rem,
+    $line-height: 1.25rem
+  );
 
   background-color: $details-box;
   border-radius: 8px;
@@ -380,7 +376,11 @@
   }
 
   button {
-    @include font-styles($weight: 500, $font-size: 0.85rem, $line-height: 1.2rem);
+    @include font-styles(
+      $weight: 500,
+      $font-size: 0.85rem,
+      $line-height: 1.2rem
+    );
 
     padding: 0.55rem;
   }
@@ -406,7 +406,12 @@
   }
 
   .nav-links-md a {
-    @include font-styles($weight: 500, $font-size: 0.75rem, $line-height: 1rem, $font: $primary-font);
+    @include font-styles(
+      $weight: 500,
+      $font-size: 0.75rem,
+      $line-height: 1rem,
+      $font: $primary-font
+    );
 
     color: $body-font-color;
   }
@@ -523,7 +528,7 @@
 
   .project-md-stretched-link:hover {
     border: 2px solid $project-hover-border;
-    box-shadow: 0 1.75rem 20px	rgb(235, 235, 255, 0.84);
+    box-shadow: 0 1.75rem 20px rgb(235, 235, 255, 0.84);
   }
 
   .project-md-stretched-link:hover ~ button {
@@ -603,7 +608,7 @@
   }
 
   .contact-me-content-wrapper {
-    max-width: $wide-content*0.5;
+    max-width: $wide-content * 0.5;
     margin: 0 auto 88px;
   }
 }
