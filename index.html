@@ -200,7 +200,7 @@
         <div class="row">
           <div class="col-md me-md-3 d-md-grid align-content-center">
             <div
-              class="screenshot-div-frame screenshot-div-frame-3-bg-color mb-3 mb-md-0"
+              class="screenshot-div-frame screenshot-div-frame-1-bg-color mb-3 mb-md-0"
             >
               <div
                 class="project-screenshot-div-container project-screenshot-1-background"
@@ -262,7 +262,7 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header pb-md-0">
-                <h3 class="modal-title" id="expert-class">
+                <h3 class="modal-title" id="weather-app-calendar">
                   Weather App Calendar
                 </h3>
                 <button
@@ -335,6 +335,8 @@
                         <li class="project-tag ms-0">react</li>
                         <li class="project-tag">docker</li>
                         <li class="project-tag">docker compose</li>
+                        <li class="project-tag">linux</li>
+                        <li class="project-tag">shell</li>
                         <li class="project-tag">rubocop</li>
                         <li class="project-tag">redux</li>
                         <li class="project-tag">msw</li>
@@ -394,10 +396,10 @@
         <div class="row">
           <div class="col-md me-md-3 d-md-grid align-content-center">
             <div
-              class="screenshot-div-frame screenshot-div-frame-6-bg-color mb-3 mb-md-0"
+              class="screenshot-div-frame screenshot-div-frame-5-bg-color mb-3 mb-md-0"
             >
               <div
-                class="project-screenshot-div-container project-screenshot-6-background"
+                class="project-screenshot-div-container project-screenshot-2-background"
               ></div>
             </div>
           </div>
@@ -408,32 +410,38 @@
               href="#"
               class="project-md-stretched-link d-none d-md-block stretched-link"
               data-bs-toggle="modal"
-              data-bs-target="#project6"
+              data-bs-target="#project2"
             ></a>
-            <h3>GNI per Capita in the World</h3>
+            <h3>NextJS Pokemon Search App</h3>
             <ul class="d-flex flex-wrap mb-md-4">
-              <li><span class="caption caption-bold">App</span></li>
+              <li><span class="caption caption-bold">Search App</span></li>
               <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">Front End Dev</span></li>
+              <li><span class="caption">Server-side rendering</span></li>
               <li class="neutral-bullet-point mx-2">•</li>
-              <li><span class="caption">2021</span></li>
+              <li><span class="caption">2023</span></li>
             </ul>
             <p class="project-section-para">
-              This web app shows the GNI per capita indicator for all countries
-              in the world. It consumes the World Bank API. I built it with
-              React and Redux.
+              NextJS Pokemon Search App is a <strong>Next.js</strong> frontend
+              responsive web app that consumes the Pokemon API. It allows you to
+              search for any pokémon and get a summary. I built it using some
+              modern tools, such as <strong>stitches.dev</strong>,
+              <strong>React Query</strong>, <strong>Zustand</strong>, and
+              <strong>TypeScript</strong>. The app follows the
+              <strong>Atomic Design Pattern</strong> principles for UI
+              development.
             </p>
             <ul class="d-flex flex-wrap">
-              <li class="project-tag ms-0">react - redux</li>
-              <li class="project-tag">html - css - javascript</li>
-              <li class="project-tag">styled components</li>
-              <li class="project-tag">sass</li>
+              <li class="project-tag ms-0">nextjs - react query</li>
+              <li class="project-tag">typescript</li>
+              <li class="project-tag">stitches.dev</li>
+              <li class="project-tag">zustand</li>
+              <li class="project-tag">Atomic Design Pattern</li>
             </ul>
             <!-- Button trigger modal -->
             <button
               type="button"
               data-bs-toggle="modal"
-              data-bs-target="#project6"
+              data-bs-target="#project2"
             >
               See Project
             </button>
@@ -443,16 +451,16 @@
         <!-- Modal -->
         <div
           class="modal fade"
-          id="project6"
+          id="project2"
           tabindex="-1"
-          aria-labelledby="project6"
+          aria-labelledby="project2"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header pb-md-0">
-                <h3 class="modal-title" id="gni-per-capita">
-                  GNI per Capita in the World
+                <h3 class="modal-title" id="nextjs-pokemon-search-app">
+                  NextJS Pokemon Search App
                 </h3>
                 <button
                   type="button"
@@ -462,18 +470,18 @@
                 ></button>
               </div>
               <ul class="d-flex flex-wrap px-3 mb-md-2">
-                <li><span class="caption caption-bold">App</span></li>
+                <li><span class="caption caption-bold">Search App</span></li>
                 <li class="neutral-bullet-point mx-2">•</li>
-                <li><span class="caption">Front End Dev</span></li>
+                <li><span class="caption">Server-side rendering</span></li>
                 <li class="neutral-bullet-point mx-2">•</li>
-                <li><span class="caption">2021</span></li>
+                <li><span class="caption">2023</span></li>
               </ul>
               <div class="modal-body">
                 <div
-                  class="screenshot-div-frame screenshot-div-frame-6-bg-color"
+                  class="screenshot-div-frame screenshot-div-frame-5-bg-color"
                 >
                   <div
-                    class="project-screenshot-div-container project-screenshot-6-background"
+                    class="project-screenshot-div-container project-screenshot-2-background"
                   ></div>
                 </div>
               </div>
@@ -482,67 +490,50 @@
                   <div class="row">
                     <div class="modal-footer-project-description col-md-8">
                       <p class="project-section-para mt-0">
-                        In this app, users can see the GNI per Capita Indicator
-                        (Atlas Method) of every country in the world. Data are
-                        classified according to the geographic location of the
-                        country or by its income level. There are two slices for
-                        the store, one for the homepage data and another for the
-                        detailed view of each country group.<br /><br />
-
-                        The page consumes the World Bank API located
-                        <a
-                          rel="noopener noreferrer"
-                          href="http://api.worldbank.org/v2/datacatalog"
-                          target="_blank"
-                          >here</a
-                        >. Single <strong>API</strong> queries are made per
-                        page, and only if data doesn't exist in the Redux store.
-                        I used <strong>Redux's thunk</strong> middleware to
-                        handle all API calls.<br /><br />
-
-                        For testing I used <strong>Jest</strong>,
-                        <strong>React's Testing Library</strong>, and
-                        <strong>MSW</strong>(for API mocking).<br /><br />
-
-                        I built it with <strong>React</strong> and
-                        <strong>Redux</strong>. It was bootstrapped with
-                        <i>
+                        This <strong>Next.js</strong> frontend web app is a
+                        user-friendly interface that allows users to browse and
+                        search for Pokemon data from the
+                        <strong>
                           <a
                             rel="noopener noreferrer"
-                            href="https://github.com/facebook/create-react-app"
                             target="_blank"
-                            >create-react-app</a
-                          > </i
-                        >.<br /><br />
-
-                        The design was inspired by a project from
-                        <strong
-                          ><i
-                            ><a
-                              rel="noopener noreferrer"
-                              href="https://www.behance.net/sakwadesignstudio"
-                              target="_blank"
-                              >Nelson Sakwa</a
-                            ></i
-                          ></strong
-                        >, whose project is licenced under
-                        <i>The Creative Commons</i> license.
+                            href="https://pokeapi.co"
+                            >PokéApi</a
+                          > </strong
+                        >. Built with <strong>server-side rendering</strong>, it
+                        delivers fast and reliable performance and enhances
+                        <strong>SEO</strong>. The app features a search bar that
+                        utilizes debounce functionality for efficient searches,
+                        and infinite scroll for effortless browsing of large
+                        amounts of data.<br /><br />
+                        This app follows the
+                        <strong>Atomic Design Pattern</strong>, which breaks
+                        down the interface into smaller, reusable components.
+                        These components are built with
+                        <strong>Stitches.dev</strong>, a CSS-in-JS library that
+                        provides high-performance styles.<br /><br />
+                        The app's state management is powered by
+                        <strong>Zustand</strong>, while its code quality is
+                        improved by <strong>TypeScript</strong>.<br /><br />
+                        Overall, this app provides a seamless and intuitive
+                        experience for users to browse and search for Pokemon
+                        data. Its fast performance, responsive design, reusable
+                        components, and efficient search and browsing features
+                        make it a showcase of the power and flexibility of the
+                        Next.js framework.<br /><br />
                       </p>
                     </div>
                     <div class="col-md-4">
                       <ul class="d-flex flex-wrap">
+                        <li class="project-tag">nextjs</li>
                         <li class="project-tag ms-0">react</li>
-                        <li class="project-tag">redux</li>
-                        <li class="project-tag">styled components</li>
-                        <li class="project-tag">sass</li>
-                        <li class="project-tag">msw</li>
-                        <li class="project-tag">react's testing library</li>
-                        <li class="project-tag">jest</li>
-                        <li class="project-tag">html</li>
-                        <li class="project-tag">css</li>
-                        <li class="project-tag">javascript</li>
-                        <li class="project-tag">netlify</li>
-                        <li class="project-tag">npm</li>
+                        <li class="project-tag ms-0">react query</li>
+                        <li class="project-tag">typescript</li>
+                        <li class="project-tag">stitches.dev</li>
+                        <li class="project-tag">prettier</li>
+                        <li class="project-tag">zustand</li>
+                        <li class="project-tag">vercel</li>
+                        <li class="project-tag">yarn</li>
                         <li class="project-tag">ESlint</li>
                         <li class="project-tag">vs code</li>
                       </ul>
@@ -553,7 +544,7 @@
                         <button
                           type="button"
                           class="w-100 modal-button my-0 me-1 py-md-2"
-                          onclick="window.open('https://agitated-sinoussi-e23bf8.netlify.app/#/')"
+                          onclick="window.open('https://nextjs-pokemon-search-app.vercel.app')"
                           value="See live"
                         >
                           See live <i class="ps-2 fas fa-external-link-alt"></i>
@@ -561,7 +552,7 @@
                         <button
                           type="button"
                           class="w-100 modal-button my-0 ms-1 py-md-2"
-                          onclick="window.open('https://github.com/StarSheriff2/GNI-per-Capita-in-the-World')"
+                          onclick="window.open('https://github.com/StarSheriff2/nextjs-pokemon-search-app')"
                           value="See Source"
                         >
                           See Source <i class="ps-2 fab fa-github"></i>
@@ -637,7 +628,7 @@
           class="modal fade"
           id="project3"
           tabindex="-1"
-          aria-labelledby="project6"
+          aria-labelledby="project3"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered">
@@ -743,6 +734,8 @@
                         <li class="project-tag">railway.app</li>
                         <li class="project-tag">netlify</li>
                         <li class="project-tag">npm</li>
+                        <li class="project-tag">linux</li>
+                        <li class="project-tag">shell</li>
                         <li class="project-tag">react-bootstrap</li>
                         <li class="project-tag">swiper</li>
                         <li class="project-tag">rspec</li>
@@ -856,7 +849,7 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header pb-md-0">
-                <h3 class="modal-title" id="to-do-list">Music Candy</h3>
+                <h3 class="modal-title" id="music-candy">Music Candy</h3>
                 <button
                   type="button"
                   class="btn-close me-2"

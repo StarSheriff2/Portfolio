@@ -193,10 +193,6 @@
   background-color: $primary-color-complement;
 }
 
-.screenshot-div-frame-6-bg-color {
-  background-color: $primary-color-complement;
-}
-
 .screenshot-div-frame-7-bg-color {
   background-color: #f28729;
 }
@@ -216,7 +212,8 @@
 }
 
 .project-screenshot-2-background {
-  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png)
+  background: transparent
+    url('https://user-images.githubusercontent.com/61250665/224841067-63cfd0ef-0853-46fa-b48b-1746348d0124.png')
     center/contain no-repeat;
 }
 
