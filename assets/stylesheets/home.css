@@ -485,7 +485,7 @@ details[open] > summary::before {
 }
 
 .project-screenshot-1-background {
-  background: transparent url(../images/Screenshot-Weather-App-Calendar.png) center center/contain no-repeat;
+  background: transparent url(https://res.cloudinary.com/starsheriff/image/upload/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png) center center/contain no-repeat;
 }
 
 .project-screenshot-2-background {
@@ -493,11 +493,11 @@ details[open] > summary::before {
 }
 
 .project-screenshot-3-background {
-  background: transparent url(../images/Screenshot-Expert-Class.png) center/contain no-repeat;
+  background: transparent url(https://res.cloudinary.com/starsheriff/image/upload/v1678988353/Screenshot-Expert-Class_ncmtxe.png) center/contain no-repeat;
 }
 
 .project-screenshot-4-background {
-  background: transparent url(../images/Screenshot-Music-Candy.png) center/contain no-repeat;
+  background: transparent url(https://res.cloudinary.com/starsheriff/image/upload/v1678988347/Screenshot-Music-Candy_ttqmhn.png) center/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {
