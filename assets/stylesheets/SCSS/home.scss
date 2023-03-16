@@ -211,8 +211,8 @@
 }
 
 .project-screenshot-1-background {
-  background: transparent url(../images/Screenshot-Todo-List-app.png) center
-    center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Weather-App-Calendar.png)
+    center center/contain no-repeat;
 }
 
 .project-screenshot-2-background {
@@ -559,6 +559,12 @@
   .project-tag {
     font-size: 0.6rem;
     line-height: 0.7rem;
+    cursor: default;
+    border: 2px transparent solid;
+  }
+
+  .project-tag:hover {
+    border: 2px $primary-color solid;
   }
 
   .modal-dialog {

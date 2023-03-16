@@ -489,7 +489,7 @@ details[open] > summary::before {
 }
 
 .project-screenshot-1-background {
-  background: transparent url(../images/Screenshot-Todo-List-app.png) center center/contain no-repeat;
+  background: transparent url(../images/Screenshot-Weather-App-Calendar.png) center center/contain no-repeat;
 }
 
 .project-screenshot-2-background {
@@ -806,6 +806,12 @@ details[open] > summary::before {
   .project-tag {
     font-size: 0.6rem;
     line-height: 0.7rem;
+    cursor: default;
+    border: 2px transparent solid;
+  }
+
+  .project-tag:hover {
+    border: 2px #6070ff solid;
   }
 
   .modal-dialog {
