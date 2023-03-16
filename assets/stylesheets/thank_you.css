@@ -12,6 +12,12 @@ body {
   overflow-x: hidden;
 }
 
+/* Color Pallette */
+/* Desktop View */
+/* Font Variables */
+/* Spacing */
+/* Buttons */
+/* Widths */
 /*
   =======================
   General layout
@@ -150,32 +156,20 @@ textarea {
 
 textarea::placeholder {
   font: normal 0.93rem/1.5rem "Poppins", sans-serif;
-  color: #b3bac5;
+  color: darkgrey;
 }
 
-::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  font: normal 1.06rem/1.45rem "Poppins", sans-serif;
-  color: #172b4d;
-}
-
-::-moz-placeholder {
+::placeholder {
   /* Firefox 19+ */
   font: normal 1.06rem/1.45rem "Poppins", sans-serif;
-  color: #172b4d;
+  color: darkgrey;
   opacity: 1;
 }
 
-:-ms-input-placeholder {
-  /* IE 10+ */
-  font: normal 1.06rem/1.45rem "Poppins", sans-serif;
-  color: #172b4d;
-}
-
-:-moz-placeholder {
+:placeholder {
   /* Firefox 18- */
   font: normal 1.06rem/1.45rem "Poppins", sans-serif;
-  color: #172b4d;
+  color: darkgrey;
   opacity: 1;
 }
 

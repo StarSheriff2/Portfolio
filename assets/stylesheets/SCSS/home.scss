@@ -25,10 +25,7 @@
 
 .background-icons-wrapper {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
   z-index: 2;
   border-radius: 0 0 0 88px;
 }
@@ -42,20 +39,20 @@
   bottom: 24px;
   transform: rotate(5deg);
   width: 56px;
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .netflix-icon {
   right: -130px;
   top: 80px;
   transform: rotate(55deg);
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .cat-icon-2 {
   top: 260px;
   left: 180px;
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .supermario-icon {
@@ -63,19 +60,19 @@
   left: 130px;
   transform: rotate(-33deg);
   width: 56px;
-  opacity: 55%;
+  opacity: 0.55;
 }
 
 .wavy-line-icon {
   top: 60px;
   left: 20px;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .wavy-line-icon-2 {
   top: 200px;
   left: 60px;
-  opacity: 10%;
+  opacity: 0.1;
   width: 35px;
 }
 
@@ -83,7 +80,7 @@
   bottom: -25px;
   left: 0;
   transform: rotate(90deg);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .header-content-wrapper {
@@ -121,7 +118,7 @@
 
 .nav-wrapper-scroll-class {
   background-color: $white;
-  box-shadow: 0 0.55rem 8px rgb(235, 235, 255, 0.84);
+  box-shadow: 0 0.55rem 8px rgb(235 235 255 / 84%);
   transition: top 0.3s;
 }
 
@@ -170,7 +167,7 @@
   height: 0;
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 0.35rem 11px 1px rgba(102, 102, 117, 0.15);
+  box-shadow: 0 0.35rem 11px 1px rgb(102 102 117 / 15%);
 }
 
 .screenshot-div-frame-1-bg-color {
@@ -199,16 +196,13 @@
 
 .project-screenshot-div-container {
   position: absolute;
-  top: $spacer * 1.75;
-  left: $spacer * 1.25;
-  right: $spacer * 1.25;
-  bottom: $spacer * 1.75;
+  inset: $spacer * 1.75 $spacer * 1.25 $spacer * 1.75 $spacer * 1.25;
   z-index: 1;
 }
 
 .project-screenshot-1-background {
   background: transparent
-    url(https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png)
+    url("https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png")
     center center/contain no-repeat;
 }
 
@@ -220,18 +214,18 @@
 
 .project-screenshot-3-background {
   background: transparent
-    url(https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988353/Screenshot-Expert-Class_ncmtxe.png)
+    url("https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988353/Screenshot-Expert-Class_ncmtxe.png")
     center/contain no-repeat;
 }
 
 .project-screenshot-4-background {
   background: transparent
-    url(https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Music-Candy_ttqmhn.png)
+    url("https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Music-Candy_ttqmhn.png")
     center/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {
-  box-shadow: 0 0.4rem 7px 1px rgba(102, 102, 117, 0.2);
+  box-shadow: 0 0.4rem 7px 1px rgb(102 102 117 / 20%);
 }
 
 .project-section-para,
@@ -276,7 +270,7 @@
 }
 
 .contact-me {
-  border-radius: 88px 0 0 0;
+  border-radius: 88px 0 0;
   background-color: $primary-color;
   color: $white;
   position: relative;
@@ -285,20 +279,20 @@
 .wavy-line-icon-drk-bg-1 {
   top: 60px;
   transform: rotate(90deg);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .wavy-line-icon-drk-bg-2 {
   top: 200px;
   right: 80px;
-  opacity: 30%;
+  opacity: 0.3;
   width: 46px;
 }
 
 .wavy-line-icon-drk-bg-3 {
   bottom: -20px;
   transform: rotate(90deg);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .contact-me h2,
@@ -423,20 +417,20 @@
     bottom: 100px;
     transform: rotate(-45deg);
     width: 64px;
-    opacity: 40%;
+    opacity: 0.4;
   }
 
   .netflix-icon {
     right: -120px;
     top: 150px;
     transform: rotate(30deg);
-    opacity: 40%;
+    opacity: 0.4;
   }
 
   .cat-icon-2 {
     top: 300px;
     left: 180px;
-    opacity: 20%;
+    opacity: 0.2;
   }
 
   .supermario-icon {
@@ -444,19 +438,19 @@
     left: 200px;
     transform: rotate(33deg);
     width: 64px;
-    opacity: 65%;
+    opacity: 0.65;
   }
 
   .wavy-line-icon {
     top: 120px;
     left: 60px;
-    opacity: 30%;
+    opacity: 0.3;
   }
 
   .wavy-line-icon-2 {
     top: 400px;
     left: 650px;
-    opacity: 10%;
+    opacity: 0.1;
     width: 55px;
   }
 
@@ -464,7 +458,7 @@
     bottom: 20px;
     left: 20px;
     transform: rotate(90deg);
-    opacity: 80%;
+    opacity: 0.8;
   }
 
   /* Header Content */
@@ -512,15 +506,12 @@
   }
 
   .screenshot-div-frame {
-    box-shadow: 0 0.9rem 11px 1px rgba(102, 102, 117, 0.3);
+    box-shadow: 0 0.9rem 11px 1px rgb(102 102 117 / 30%);
   }
 
   .project-md-stretched-link {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     z-index: 20;
     border: 1px solid $border-neutral;
     border-radius: 24px;
@@ -528,13 +519,13 @@
 
   .project-md-stretched-link:hover {
     border: 2px solid $project-hover-border;
-    box-shadow: 0 1.75rem 20px rgb(235, 235, 255, 0.84);
+    box-shadow: 0 1.75rem 20px rgb(235 235 255 / 84%);
   }
 
   .project-md-stretched-link:hover ~ button {
     color: $white;
     background-color: $primary-color;
-    box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+    box-shadow: 0 0.5rem 1rem rgb(64 83 252 / 24%);
   }
 
   .project-md-stretched-link:active ~ button {

@@ -12,32 +12,36 @@ body {
   overflow-x: hidden;
 }
 
-// Color Pallette //
+/* Color Pallette */
 
 $bg-color: #f4f5f7;
 $primary-color: #6070ff;
-$primary-color-rgb: rgb(96, 112, 255);
-$primary-color-rgba: rgba(96, 112, 255, 0.95);
+$primary-color-rgb: rgb(96 112 255);
+$primary-color-rgba: rgb(96 112 255 / 95%);
 $primary-color-complement: #ebebff;
 $icons: #505f79;
 $links-visited: #565079;
 $white: #fff;
 $neutrals: #7a869a;
-$border-neutral:#dfe1e6;
+$border-neutral: #dfe1e6;
 $details-box: #f7f7f9;
 $details-text: #253858;
 $input-border-color: #cfd8dc;
 
-// Desktop View //
+/* Desktop View */
 
 $project-hover-border: #a7aeff;
 
-// Font Variables //
+/* Font Variables */
 
-$primary-font: 'Poppins',
-  sans-serif;
+$primary-font: 'Poppins', sans-serif;
 
-@mixin font-styles($weight: normal, $font-size: 1rem, $line-height: 1.5rem, $font: $primary-font) {
+@mixin font-styles(
+  $weight: normal,
+  $font-size: 1rem,
+  $line-height: 1.5rem,
+  $font: $primary-font
+) {
   font: $weight #{$font-size}/#{$line-height} $font;
 }
 
@@ -46,11 +50,11 @@ $header-font-color: #172b4d;
 $sub-header-font-color: #000;
 $inline-section-header: #7f8cff;
 
-// Spacing //
+/* Spacing */
 
 $spacer: 1rem;
 
-// Buttons //
+/* Buttons */
 
 $button-enabled-border: $inline-section-header;
 $button-modal: #396df2;
@@ -58,7 +62,7 @@ $button-pressed: #2230d2;
 $button-text-disabled: #5e6c84;
 $button-border-disabled: #c1c7d0;
 
-// Widths //
+/* Widths */
 
 $extra-wide-content: 1156px;
 $wide-content: 920px;
@@ -142,7 +146,11 @@ body {
 }
 
 h2 {
-  @include font-styles($weight: bold, $font-size: 2.5rem, $line-height: 3.25rem);
+  @include font-styles(
+    $weight: bold,
+    $font-size: 2.5rem,
+    $line-height: 3.25rem
+  );
 
   margin-top: 88px;
   color: $header-font-color;
@@ -212,32 +220,33 @@ textarea {
 textarea::placeholder {
   @include font-styles($font-size: 0.93rem, $line-height: 1.5rem);
 
-  color: #b3bac5;
+  color: darkgrey;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+// ::input-placeholder {
+//   /* Chrome/Opera/Safari, IE 10+ */
+//   @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
+
+//   color: $header-font-color;
+// }
+
+// input::placeholder {
+//   color: $header-font-color !important;
+// }
+
+::placeholder {
+  /* Firefox 19+ */
   @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
 
-  color: $header-font-color;
-}
-
-::-moz-placeholder { /* Firefox 19+ */
-  @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
-
-  color: $header-font-color;
+  color: darkgrey;
   opacity: 1;
 }
 
-:-ms-input-placeholder { /* IE 10+ */
+:placeholder {
+  /* Firefox 18- */
   @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
 
-  color: $header-font-color;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  @include font-styles($font-size: 1.06rem, $line-height: 1.45rem);
-
-  color: $header-font-color;
+  color: darkgrey;
   opacity: 1;
 }
 
@@ -271,7 +280,7 @@ button {
 button:hover {
   color: $white;
   background-color: $primary-color;
-  box-shadow: 0 0.5rem 1rem rgba(64, 83, 252, 0.24);
+  box-shadow: 0 0.5rem 1rem rgb(64 83 252 / 24%);
 }
 
 button:active {
