@@ -471,10 +471,6 @@ details[open] > summary::before {
   background-color: #ebebff;
 }
 
-.screenshot-div-frame-6-bg-color {
-  background-color: #ebebff;
-}
-
 .screenshot-div-frame-7-bg-color {
   background-color: #f28729;
 }
@@ -489,31 +485,19 @@ details[open] > summary::before {
 }
 
 .project-screenshot-1-background {
-  background: transparent url(../images/Screenshot-Todo-List-app.png) center center/contain no-repeat;
+  background: transparent url(https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png) center center/contain no-repeat;
 }
 
 .project-screenshot-2-background {
-  background: transparent url(../images/Screenshot-ReceipeBuddies-Rails.png) center/contain no-repeat;
+  background: transparent url("https://user-images.githubusercontent.com/61250665/224841067-63cfd0ef-0853-46fa-b48b-1746348d0124.png") center/contain no-repeat;
 }
 
 .project-screenshot-3-background {
-  background: transparent url(../images/Screenshot-SocialScaffold-Rails.png) center/contain no-repeat;
+  background: transparent url(https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988353/Screenshot-Expert-Class_ncmtxe.png) center/contain no-repeat;
 }
 
 .project-screenshot-4-background {
-  background: transparent url(../images/Screenshot-SalsaFestival2020-HTML-SCSS.png) center/contain no-repeat;
-}
-
-.project-screenshot-5-background {
-  background: transparent url(../images/Screenshot-MD-Cleaner-Ruby.png) center/contain no-repeat;
-}
-
-.project-screenshot-6-background {
-  background: url(../images/Screenshot-GNI-per-Capita-in-the-World.png) 20%/contain no-repeat, url(../images/Screenshot-GNI-per-Capita-in-the-World2.png) 80%/contain no-repeat;
-}
-
-.project-screenshot-7-background {
-  background: transparent url(../images/Screenshot-Expert-Class.png) center/contain no-repeat;
+  background: transparent url(https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Music-Candy_ttqmhn.png) center/contain no-repeat;
 }
 
 .modal-body .screenshot-div-frame {
@@ -818,6 +802,12 @@ details[open] > summary::before {
   .project-tag {
     font-size: 0.6rem;
     line-height: 0.7rem;
+    cursor: default;
+    border: 2px transparent solid;
+  }
+
+  .project-tag:hover {
+    border: 2px #6070ff solid;
   }
 
   .modal-dialog {
