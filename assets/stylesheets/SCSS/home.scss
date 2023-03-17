@@ -201,12 +201,21 @@
 }
 
 .project-screenshot-1-background {
-  background: url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png')
+  background: url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_152/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png')
       right center/contain no-repeat,
-    url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1679022664/new_reminder_screenshot_mobile_cxruhb.png')
+    url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_152/v1679022664/new_reminder_screenshot_mobile_cxruhb.png')
       center center/contain no-repeat,
-    url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1679022664/highlighted_reminder_screenshot_mobile_kga1sr.png')
+    url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_152/v1679022664/highlighted_reminder_screenshot_mobile_kga1sr.png')
       left center/contain no-repeat;
+
+  &--modal {
+    background: url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_320/v1679022664/highlighted_reminder_screenshot_mobile_kga1sr.png')
+        left center/320px no-repeat,
+      url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_320/v1679022664/new_reminder_screenshot_mobile_cxruhb.png')
+        center center/320px no-repeat,
+      url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_350/v1678988347/Screenshot-Weather-App-Calendar_l5gewn.png')
+        right center/320px no-repeat;
+  }
 }
 
 .project-screenshot-2-background {
@@ -219,13 +228,25 @@
   background: transparent
     url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988353/Screenshot-Expert-Class_ncmtxe.png')
     center/contain no-repeat;
+
+  &--modal {
+    background: url('https://res.cloudinary.com/starsheriff/image/upload/v1678988353/Screenshot-Expert-Class_ncmtxe.png')
+      center/contain no-repeat;
+  }
 }
 
 .project-screenshot-4-background {
-  background: url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1678988347/Screenshot-Music-Candy_ttqmhn.png')
+  background: url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_250/v1678988347/Screenshot-Music-Candy_ttqmhn.png')
       left center/contain no-repeat,
-    url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_480/v1679023243/Screenshot_2023-03-15_at_17.31.14_g6fe3k.png')
+    url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_250/v1679023243/Screenshot_2023-03-15_at_17.31.14_g6fe3k.png')
       right center/contain no-repeat;
+
+  &--modal {
+    background: url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_450/v1678988347/Screenshot-Music-Candy_ttqmhn.png')
+        left center/contain no-repeat,
+      url('https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_450/v1679023243/Screenshot_2023-03-15_at_17.31.14_g6fe3k.png')
+        right center/contain no-repeat;
+  }
 }
 
 .modal-body .screenshot-div-frame {
