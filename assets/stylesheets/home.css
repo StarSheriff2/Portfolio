@@ -768,6 +768,7 @@ details[open] > summary::before {
   background-color: #f7f7f9;
   border-radius: 8px;
   color: #253858;
+  height: 88px;
 }
 
 .language-logo {
