@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Arturo's Portfolio" />
     <meta
@@ -141,9 +140,10 @@
           data-aos-delay="400"
           class="header-text"
         >
-          I'm a full-stack software developer. Feel free to browse through my
-          projects. If you like what you see and there's a project you need help
-          with, please don't hesitate to get in touch!
+          I'm a full-stack software developer with a hands-on approach to
+          problem-solving. Feel free to browse through my projects. If you like
+          what you see and there's a project you need help with, please don't
+          hesitate to get in touch!
         </p>
         <h5
           data-aos="fade-right"
@@ -226,7 +226,7 @@
             </ul>
             <p class="project-section-para">
               A fully responsive web app for creating reminders that shows you
-              the weather forecast for your planned activities, based on its
+              the weather forecast for your planned activities, based on their
               geolocation and time. I built it with
               <strong>create-react-app</strong> and
               <strong>redux toolkit</strong>. For the backend I used a
@@ -256,7 +256,7 @@
           class="modal fade"
           id="project1"
           tabindex="-1"
-          aria-labelledby="project6"
+          aria-labelledby="project1Label"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered">
@@ -288,7 +288,7 @@
                   class="screenshot-div-frame screenshot-div-frame-3-bg-color"
                 >
                   <div
-                    class="project-screenshot-div-container project-screenshot-1-background"
+                    class="project-screenshot-div-container project-screenshot-1-background--modal"
                   ></div>
                 </div>
               </div>
@@ -654,7 +654,7 @@
                   class="screenshot-div-frame screenshot-div-frame-7-bg-color"
                 >
                   <div
-                    class="project-screenshot-div-container project-screenshot-3-background"
+                    class="project-screenshot-div-container project-screenshot-3-background--modal"
                   ></div>
                 </div>
               </div>
@@ -869,7 +869,7 @@
                   class="screenshot-div-frame screenshot-div-frame-1-bg-color"
                 >
                   <div
-                    class="project-screenshot-div-container project-screenshot-4-background"
+                    class="project-screenshot-div-container project-screenshot-4-background--modal"
                   ></div>
                 </div>
               </div>
@@ -1007,45 +1007,60 @@
                   class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989016/ruby-logo_cj7r6v.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989016/ruby-logo_cj7r6v.png"
                     alt="language-logo"
                     class="language-logo me-3 circular-border"
+                    loading="lazy"
                   /><span>Ruby</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989007/js-logo_cl7rbr.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679028690/919832_g9eq5n.png"
                     alt="language-logo"
                     class="language-logo me-3 circular-border"
-                  /><span>Javascript</span>
+                    loading="lazy"
+                  /><span>TypeScript</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989007/js-logo_cl7rbr.png"
+                    alt="language-logo"
+                    class="language-logo me-3 circular-border"
+                    loading="lazy"
+                  /><span>JavaScript</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988995/html5-logo_g0fsez.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988995/html5-logo_g0fsez.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>HTML</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988994/css3-logo_lj5ct3.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988994/css3-logo_lj5ct3.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>CSS</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989019/sql_logo_yqbygi.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989019/sql_logo_yqbygi.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>SQL</span>
                 </div>
               </details>
@@ -1058,82 +1073,141 @@
                   class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989016/ruby-on-rails-logo_jw8w5r.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989016/ruby-on-rails-logo_jw8w5r.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Ruby on Rails</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679029630/logo-small_lp9vw1.svg"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Nest.js</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989017/react-logo_gooihw.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989017/react-logo_gooihw.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>ReactJS</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989016/redux-logo_yivcqw.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989016/redux-logo_yivcqw.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Redux</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989008/postgres-logo_rza84i.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989008/postgres-logo_rza84i.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>PostgreSQL</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988994/bootstrap-logo_dugnqg.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988994/bootstrap-logo_dugnqg.png"
                     alt="language-logo"
                     class="language-logo circular-border me-3"
+                    loading="lazy"
                   /><span>Bootstrap</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989007/jest-logo_w8yd2y.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679029415/next-js_nz67zc.svg"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Next.js</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030089/vscode_icons_type_light_prisma-1324451365475006031_yuigyy.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Prisma</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989007/jest-logo_w8yd2y.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
                   /><span>Jest</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989016/rspec-logo_chcg6i.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679029157/emblem-light-628080660fddb35787ff6c77e97ca43e_qpr5iy.svg"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
+                  /><span>React Query</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989016/rspec-logo_chcg6i.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
                   /><span>RSpec</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989007/msw-logo_z6kt6j.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989007/msw-logo_z6kt6j.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>MSW (API mocking)</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989016/react-testing-library-logo_fwffio.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989016/react-testing-library-logo_fwffio.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>React Testing Library</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030088/formik-icon-512x512-se1fegy1_w8jmtz.png"
+                    alt="language-logo"
+                    class="language-logo circular-border me-3"
+                    loading="lazy"
+                  /><span>Formik</span>
                 </div>
               </details>
               <hr />
@@ -1145,99 +1219,190 @@
                   class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988994/git-logo_tf78gi.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988994/git-logo_tf78gi.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Git Version Control</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988995/github-logo_kqc4xj.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988995/github-logo_kqc4xj.png"
                     alt="language-logo"
                     class="language-logo circular-border me-3"
+                    loading="lazy"
                   /><span>Github</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989017/sass-logo_iwjnjv.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030088/vertical-logo-monochromatic_oysilj.webp"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Docker</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030089/27-272595_docker-compose-docker-compose-logo-hd-png-download_cuosum.png"
+                    alt="language-logo"
+                    class="language-logo circular-border me-3"
+                    loading="lazy"
+                  /><span>Docker Compose</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030089/1280px-Amazon_Web_Services_Logo.svg_y2yv87.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
+                  /><span>AWS</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030088/1200px-DigitalOcean_logo.svg_kerfdy.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Digital Ocean</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989017/sass-logo_iwjnjv.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
                   /><span>SCSS</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989020/webpack-logo_x7zou8.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030088/sc_ztndfy.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Styled Components</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989020/webpack-logo_x7zou8.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
                   /><span>WebPack</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989007/npm-logo_ujyrkk.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989007/npm-logo_ujyrkk.png"
                     alt="language-logo"
-                    class="language-logo me-3"
+                    class="language-logo circular-border me-3"
+                    loading="lazy"
                   /><span>NPM</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989020/yarn-logo_vhoihd.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989020/yarn-logo_vhoihd.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Yarn</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988994/heroku-logo_wkckzu.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988994/heroku-logo_wkckzu.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Heroku</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988964/axios-logo_ioo97a.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679030089/auth0-logo-png-transparent_qorrlh.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Auth0</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679031512/vercel-icon-512x449-3422jidz_ljlhbh.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Vercel</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1679031540/logo-dark_exdt8r.svg"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
+                  /><span>Railway</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <img
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988964/axios-logo_ioo97a.png"
+                    alt="language-logo"
+                    class="language-logo me-3"
+                    loading="lazy"
                   /><span>Axios</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989007/jwt-logo_zkklhv.svg"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989007/jwt-logo_zkklhv.svg"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>JWT Token</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678989007/netlify-logo_maomrg.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678989007/netlify-logo_maomrg.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Netlify</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <img
-                    src="https://res.cloudinary.com/starsheriff/image/upload/v1678988995/cloudinary-logo_ehee4d.png"
+                    src="https://res.cloudinary.com/starsheriff/image/upload/c_scale,w_100/v1678988995/cloudinary-logo_ehee4d.png"
                     alt="language-logo"
                     class="language-logo me-3"
+                    loading="lazy"
                   /><span>Cloudinary</span>
                 </div>
               </details>
@@ -1250,6 +1415,11 @@
                   class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
                 >
                   <span>Pair Programming</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3 mt-4"
+                >
+                  <span>Communication</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
@@ -1270,6 +1440,11 @@
                   class="details-content-container d-flex align-items-center p-3 mb-3"
                 >
                   <span>Remote Working</span>
+                </div>
+                <div
+                  class="details-content-container d-flex align-items-center p-3 mb-3"
+                >
+                  <span>Agile Development</span>
                 </div>
                 <div
                   class="details-content-container d-flex align-items-center p-3 mb-3"
@@ -1318,13 +1493,13 @@
             I would love to help you make it a reality.
           </p>
           <form
-            action="https://formsubmit.co/6de9cd9d41e328f7452519b3037b2aff"
+            action="https://formsubmit.co/18bda3952c3d1bdc42309cc5e7bea93e"
             method="POST"
           >
             <input
               type="hidden"
               name="_subject"
-              value="New message from Portfolio! woo!"
+              value="New message from Portfolio! woohoo!"
             />
             <div class="pb-3">
               <input

@@ -8,3 +8,5 @@ package-lock.json
 package.json
 portfolio.code-workspace
 .vscode
+package.json
+yarn.lock
