@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+html:has(body.modal-open) {
+  overflow-y: hidden;
+}
+
 /* Color Pallette */
 /* Desktop View */
 /* Font Variables */
