@@ -8,13 +8,13 @@ html {
   font-size: 16px;
 }
 
+html:has(body.modal-open) {
+  overflow-y: hidden;
+}
+
 html,
 body {
   overflow-x: hidden;
-}
-
-html:has(body.modal-open) {
-  overflow-y: hidden;
 }
 
 /* Color Pallette */

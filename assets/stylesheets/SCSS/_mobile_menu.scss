@@ -11,6 +11,8 @@
   overflow-x: hidden;
   transition: 0.5s;
   z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .overlay-content {
