@@ -7,13 +7,13 @@ html {
   font-size: 16px;
 }
 
+html:has(body.modal-open) {
+  overflow-y: hidden;
+}
+
 html,
 body {
   overflow-x: hidden;
-}
-
-html:has(body.modal-open) {
-  overflow-y: hidden;
 }
 
 /* Color Pallette */
@@ -245,13 +245,13 @@ html {
   font-size: 16px;
 }
 
+html:has(body.modal-open) {
+  overflow-y: hidden;
+}
+
 html,
 body {
   overflow-x: hidden;
-}
-
-html:has(body.modal-open) {
-  overflow-y: hidden;
 }
 
 /* Color Pallette */
@@ -485,6 +485,8 @@ details[open] > summary::before {
   overflow-x: hidden;
   transition: 0.5s;
   z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .overlay-content {
