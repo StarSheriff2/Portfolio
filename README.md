@@ -36,7 +36,7 @@ sizes:
 - Technologies used: VS Code, FormSubmit, Git, Github, Hint, Stylint, Github workflows
 ## Live Demo
 
-[Live Demo Link](https://starsheriff.tech)
+[Live Demo Link](https://starsheriff2.github.io/Portfolio/)
 
 
 ## Getting Started
